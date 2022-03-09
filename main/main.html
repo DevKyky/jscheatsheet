@@ -1,29 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>JavaScript Cheat Sheet</title>
 
     <!-- Skeleton CSS -->
-    <link rel="stylesheet" href="../assets/css/normalize.css">
-    <link rel="stylesheet" href="../assets/css/skeleton.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/skeleton.css" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/jscs.css">
-
+    <link rel="stylesheet" href="../assets/css/jscs.css" />
 </head>
+
 <body>
+    <header>
+        <h2>JS CheatSheet</h2>
+    </header>
 
     <div class="container">
-        <div class="row">
-            <h4>Welcome to JS CheatSheet</h4>
-            <p>This main.html page.</p>
-        </div>
+        <main>
+            <div class="row">
+                <h3>Bienvenue sur JS CheatSheet</h3>
+                <p>This main.html page.</p>
+            </div>
+
+            <div class="row">
+                <div class="nine columns">
+                    <article id="operators">
+                        <h4>Les Opérateurs</h4>
+
+                        <h5 id="opeAffectation">Opérateurs d'affectation</h5>
+
+                        <p>
+                            Une affectation permet assigner une valeur à l'opérande gauche.
+                            Quelques opérateurs d'affectation :
+                        </p>
+
+                        <table class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Opérateur</th>
+                                    <th>Signification</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Affectation</td>
+                                    <td>a = b</td>
+                                    <td>a = b</td>
+                                </tr>
+                                <tr>
+                                    <td>Affectation après addition</td>
+                                    <td>a += b</td>
+                                    <td>a = a + b</td>
+                                </tr>
+                                <tr>
+                                    <td>Affectation après soustraction</td>
+                                    <td>a -= b</td>
+                                    <td>a = a - b</td>
+                                </tr>
+                                <tr>
+                                    <td>Affectation après multiplication</td>
+                                    <td>a *= b</td>
+                                    <td>a = a * b</td>
+                                </tr>
+                                <tr>
+                                    <td>Affectation après division</td>
+                                    <td>a /= b</td>
+                                    <td>a = a / b</td>
+                                </tr>
+                                <tr>
+                                    <td>Affectation du reste</td>
+                                    <td>a %= b</td>
+                                    <td>a = a % b</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="row">
+                            <p class="three columns">Exemple :</p>
+                            <span class="six columns">&nbsp</span>
+                            <button class="three columns" type="button" onclick="result()">
+                                Résultat
+                            </button>
+                        </div>
+
+                        <pre><code id="operateurAffectation">
+            </code></pre>
+
+                        <h5 id="opeComparaison">Opérateurs de comparaison</h5>
+                        <p>
+                            L'opérateur de comparaison compare deux opérandes et retourne
+                            une valeur booléenne (vraie ou fausse).
+                        </p>
+
+                        <table class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Opérateur</th>
+                                    <th>Exemple True</th>
+                                    <th>Exemple False</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Egalité</td>
+                                    <td>==</td>
+                                    <td>1 == "1"</td>
+                                    <td>1 == 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Inégalité</td>
+                                    <td>!=</td>
+                                    <td>1 != "2"</td>
+                                    <td>3 != 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Supériorité stricte</td>
+                                    <td>></td>
+                                    <td>2 > 1</td>
+                                    <td>1 > 1</td>
+                                </tr>
+                                <tr>
+                                    <td>Supériorité ou égalité</td>
+                                    <td>>=</td>
+                                    <td>1 >= 1</td>
+                                    <td>1 >= 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Infériorité stricte</td>
+                                    <td>
+                                        << /td>
+                                    <td>1 < 3</td>
+                                    <td>3 < 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Infériorité ou égalité</td>
+                                    <td>
+                                        <=< /td>
+                                    <td>1 <= 1</td>
+                                    <td>2 <= 1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>
+                            Pour tester une <strong>égalité ou inégalité stricte</strong>,
+                            il faut utiliser l'opérateur <code>===</code> (pour l'égalité
+                            stricte) ou bien <code>!==</code> pour l'inégalité stricte.<br />Exemple
+                            :
+                        </p>
+
+                        <div class="row">
+                            <p class="three columns">Exemple :</p>
+                            <span class="six columns">&nbsp</span>
+                            <button class="three columns" type="button" onclick="result()">
+                                Résultat
+                            </button>
+                        </div>
+
+                        <pre><code id="operateurComparaison">
+            </code></pre>
+                    </article>
+
+                    <article id="variables">
+                        <h5>Title</h5>
+                        <p>Text</p>
+                        <pre><code id="operateurAffectation">
+                        </code></pre>
+                    </article>
+
+                    <article id="functions">
+                        <h5>Title</h5>
+                        <p>Text</p>
+                        <pre><code id="operateurAffectation">
+                        </code></pre>
+                    </article>
+
+                    <article id="utilities">
+                        <h5>Title</h5>
+                        <p>Text</p>
+                        <pre><code id="operateurAffectation">
+                        </code></pre>
+                    </article>
+                </div>
+
+                <div class="three columns">
+                    <h5>Sommaire</h5>
+
+                    <ul>
+                        <li><a href="#operators">Les opérateurs</a></li>
+                        <ul>
+                            <li>
+                                <a href="#opeAffectation">Les opérateurs d'affectation</a>
+                            </li>
+                            <li>
+                                <a href="#opeComparaison">Les opérateurs de comparaison</a>
+                            </li>
+                            <li>
+                                <a href="#opeArythmetique">Les opérateurs arythmétiques</a>
+                            </li>
+                            <li>
+                                <a href="#opeLogiques">Les opérateurs logiques</a>
+                            </li>
+                            <li>
+                                <a href="#opeChaineCaracteres">Les opérateurs de chaînes de caractères</a>
+                            </li>
+                        </ul>
+
+                        <li><a href="#variables">Variables</a></li>
+
+                        <li><a href="#functions">Functions</a></li>
+
+                        <li><a href="#utilities">Utilities</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
     </div>
 
+    <footer>
+        <p>
+            Déveloped by <a href="https://github.com/DevKyky">DevKyky</a>. Based on
+            the style of <a href="http://getskeleton.com/">Skeleton</a>
+        </p>
+    </footer>
+
+    <script src="../main/js/operateurs/operateurAffectation.js"></script>
+    <script src="../main/js/operateurs/operateurComparaison.js"></script>
 </body>
+
 </html>

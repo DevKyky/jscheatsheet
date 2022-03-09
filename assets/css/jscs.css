@@ -3,6 +3,27 @@
   src: url("../fonts/Ubuntu-R.woff") format("woff");
 }
 
+/* GENERAL */
+
 body {
   font-family: "Ubuntu";
+}
+
+footer {
+  margin-top: auto;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* TABLEAU */
+
+table > thead {
+  background-color: #f1f1f1;
+}
+td:first-child {
+  padding-left: 1em;
 }
