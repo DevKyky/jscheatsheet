@@ -1,18 +1,17 @@
 function variableVarConst() {
-    // Exemple avec la variable const
-    const PI = 3.14;
-    const result = PI * 4; // 12.56
-  
-    {
-      const result = PI * 3; // 9.42
-    }
-  
-    return result;
+  // Exemple avec la variable const
+  const PI = 3.14;
+  const result = PI * 4; // 12.56
+
+  {
+    const result = PI * 3; // 9.42
   }
-  
-  function resultVarConst() {
-    alert("Résultat : " + variableVarConst());
-  }
-  
-  document.getElementById("variableConst").innerHTML = variableVarConst;
-  
+
+  return result;
+}
+
+function resultVarConst() {
+  alert("Résultat : " + variableVarConst());
+}
+
+document.getElementById("variableConst").innerHTML = variableVarConst;

@@ -370,10 +370,12 @@
 
           </article>
 
+          <!-- VARIABLES -->
           <article id="variables">
 
             <h4>Les variables</h4>
 
+            <!-- VARIABLE LET -->
             <section id="varLet">
 
               <h5>La variable let</h5>
@@ -400,6 +402,7 @@
 
             </section>
 
+            <!-- VARIABLE CONST -->
             <section id="varConst">
 
               <h5>La variable const</h5>
@@ -422,12 +425,126 @@
 
           </article>
 
+          <!-- TYPES DE DONNEES -->
+          <article id="dataType">
+
+            <h4>Les types de données</h4>
+
+            <!-- TYPE NUMBER -->
+            <section id="dataTypeNumber">
+
+              <h5>Le type number</h5>
+              <p>Le type number représente les nombres. Il regroupe aussi bien les entiers que des décimales.</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultDatatNumber()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="datatNumber">
+              </code></pre>
+
+            </section>
+
+            <!-- TYPE BOOLEEN -->
+            <section id="dataTypeBoolean">
+
+              <h5>Le type booléen</h5>
+              <p>Le type booléan est soit vrai (<code>true</code>) ou faux (<code>false</code>).</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultDatatBool()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="datatBool">
+              </code></pre>
+
+            </section>
+
+            <!-- TYPE STRING -->
+            <section id="dataTypeString">
+
+              <h5>Le type string</h5>
+              <p>Le type string est une suite de caractères. Elle se trouve le plus souvent dans des apostrophes doubles mais il existe plusieurs façon de la représenter.</p>
+              <li>
+                Double apostrophes : <code>let chaine = "ma chaine de caractères";</code>
+              </li>
+              <li>
+                Apostrophes simples : <code>let chaine = 'C\'est une chaine de caractères';</code>
+              </li>
+              <p>En utilisant les apostrophes simples, si un ou plusieurs mots utilise une apostrophe il faut veiller à "échapper" les caractères avec un <code>\</code>. Sinon, ce sera interprété comme ceci : <code>let chaine = 'C'</code> et produira une erreur ne sachant pas interprêter la suite.</p>
+              <li>
+                Barres verticales (pipe en anglais) : <code>let chaine = `ma chaine`;</code>
+              </li>
+              <p>En utilisant les barres verticales, il faudra utiliser <code>${}</code> pour utiliser une variable.</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultDatatString()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="datatString">
+              </code></pre>
+
+            </section>
+
+            <!-- TYPE NULL -->
+            <section id="dataTypeNull">
+
+              <h5>Le type null</h5>
+              <p>Le type null permet de définir une variable sans qu'elle n'ai de réel valeur car elle vaudra <code>null</code>.</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultDatatNull()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="datatNull">
+              </code></pre>
+
+            </section>
+
+            <!-- TYPE UNDEFINED -->
+            <section id="dataTypeUndefined">
+
+              <h5>Le type undefined</h5>
+              <p>Le type undefined signifie que la variable n'a pas été définie.</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultDatatUndefined()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="datatUndefined">
+              </code></pre>
+
+            </section>
+
+          </article>
+
         </div>
 
         <div class="contents three columns">
           <h5>Sommaire</h5>
 
           <ul>
+
             <li><a href="#operateurs">Les opérateurs</a></li>
             <ul>
               <li>
@@ -449,6 +566,7 @@
                 <a href="#opeTernaire">L'opérateur conditionnel ternaire</a>
               </li>
             </ul>
+
             <li><a href="#variables">Les variables</a></li>
             <ul>
               <li>
@@ -458,6 +576,17 @@
                 <a href="#varConst">La variable const</a>
               </li>
             </ul>
+
+            <li><a href="#dataType">Les types de données</a></li>
+            <ul>
+              <li><a href="#dataTypeNumber">Le type number</a></li>
+              <li><a href="#dataTypeBoolean">Le type booléen</a></li>
+              <li><a href="#dataTypeString">Le type string</a></li>
+              <li><a href="#dataTypeNull">Le type null</a></li>
+              <li><a href="#dataTypeUndefined">Le type undefined</a></li>
+              <li><a href="#dataTypeTypeof">Opérateur Typeof</a></li>
+            </ul>
+
           </ul>
         </div>
       </div>
@@ -466,7 +595,7 @@
 
   <footer>
     <p>
-      Déveloped by <a href="https://github.com/DevKyky">DevKyky</a>. Based on
+      Developed by <a href="https://github.com/DevKyky">DevKyky</a>. Based on
       the style of <a href="http://getskeleton.com/">Skeleton</a>
     </p>
     <p>
@@ -485,6 +614,13 @@
   <!-- SCRIPTS VARIABLES -->
   <script src="/assets/js/variables/variableLet.js"></script>
   <script src="/assets/js/variables/variableConst.js"></script>
+
+  <!-- SCRIPTS TYPES DE DONNEES -->
+  <script src="/assets/js/datatypes/dataTypeNumber.js"></script>
+  <script src="/assets/js/datatypes/dataTypeBoolean.js"></script>
+  <script src="/assets/js/datatypes/dataTypeString.js"></script>
+  <script src="/assets/js/datatypes/dataTypeNull.js"></script>
+  <script src="/assets/js/datatypes/dataTypeUndefined.js"></script>
 
 </body>
 
