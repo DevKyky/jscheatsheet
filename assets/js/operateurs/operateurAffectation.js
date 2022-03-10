@@ -15,4 +15,4 @@ function resultOpeAffectation() {
 
 document.getElementById(
   "operateurAffectation"
-).innerHTML = `${operateurAffectation}`;
+).innerHTML = operateurAffectation;

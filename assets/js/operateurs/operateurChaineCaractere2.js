@@ -18,5 +18,5 @@ function operateurChaineCaractere2() {
   
   document.getElementById(
     "operateurChaineCaractere2"
-  ).innerHTML = `${operateurChaineCaractere2}`;
+  ).innerHTML = operateurChaineCaractere2;
   

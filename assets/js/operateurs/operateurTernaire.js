@@ -18,5 +18,5 @@ function operateurTernaire() {
   
   document.getElementById(
     "operateurTernaire"
-  ).innerHTML = `${operateurTernaire}`;
+  ).innerHTML = operateurTernaire;
   

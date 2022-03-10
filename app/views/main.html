@@ -30,8 +30,9 @@
 
       <div class="row">
         <div class="nine columns">
+
           <!-- OPERATEURS -->
-          <article id="operators">
+          <article id="operateurs">
             <h4>Les Opérateurs</h4>
 
             <!-- OPERATEURS D'AFFECTATIONS -->
@@ -369,13 +370,65 @@
 
           </article>
 
+          <article id="variables">
+
+            <h4>Les variables</h4>
+
+            <section id="varLet">
+
+              <h5>La variable let</h5>
+              <p>La variable <code>let</code> a une portée restreinte au bloc où elle est déclarée. Il est également
+                possible de déclarer une variable avec let sans attribuer de valeur.</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultVarLet()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="variableLet">
+              </code></pre>
+
+              <p>Ici, c'est "Hello There" qui est retourné bien que la variable <code>hello</code> soit redéfinie après
+                avec "Hello World" car la redéclaration de la variable se trouve dans un autre bloc (symbolisé avec
+                <code>{}</code>).<br>Si le return aurait été effectué dans le bloc après la redéclaration de la
+                variable, "Hello World" aurait été retourné. Cependant, si le return est effectué avant la redéclaration
+                dans le bloc, une erreur se serait produite.</p>
+              <p>Il n'est pas possible de redéclarer une variable dans un même bloc.</p>
+
+            </section>
+
+            <section id="varConst">
+
+              <h5>La variable const</h5>
+              <p>Tout comme let, <code>const</code> à une portée restreinte au bloc où elle est déclarée. Il faut
+                cependant obligatoirement affecter une valeur à sa déclaration.<br>Il n'est pas possible de réaffecter
+                une constante ou bien de modifier sa valeur.</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultVarConst()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="variableConst">
+              </code></pre>
+
+            </section>
+
+          </article>
+
         </div>
 
-        <div class="three columns">
+        <div class="contents three columns">
           <h5>Sommaire</h5>
 
           <ul>
-            <li><a href="#operators">Les opérateurs</a></li>
+            <li><a href="#operateurs">Les opérateurs</a></li>
             <ul>
               <li>
                 <a href="#opeAffectation">Les opérateurs d'affectation</a>
@@ -396,6 +449,15 @@
                 <a href="#opeTernaire">L'opérateur conditionnel ternaire</a>
               </li>
             </ul>
+            <li><a href="#variables">Les variables</a></li>
+            <ul>
+              <li>
+                <a href="#varTest">La variable let</a>
+              </li>
+              <li>
+                <a href="#varConst">La variable const</a>
+              </li>
+            </ul>
           </ul>
         </div>
       </div>
@@ -411,6 +473,7 @@
     </p>
   </footer>
 
+  <!-- SCRIPTS OPERATEURS -->
   <script src="/assets/js/operateurs/operateurAffectation.js"></script>
   <script src="/assets/js/operateurs/operateurComparaison.js"></script>
   <script src="/assets/js/operateurs/operateurArithmetique.js"></script>
@@ -418,6 +481,11 @@
   <script src="/assets/js/operateurs/operateurChaineCaractere1.js"></script>
   <script src="/assets/js/operateurs/operateurChaineCaractere2.js"></script>
   <script src="/assets/js/operateurs/operateurTernaire.js"></script>
+
+  <!-- SCRIPTS VARIABLES -->
+  <script src="/assets/js/variables/variableLet.js"></script>
+  <script src="/assets/js/variables/variableConst.js"></script>
+
 </body>
 
 </html>

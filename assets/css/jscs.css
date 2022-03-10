@@ -19,11 +19,19 @@ a:link {
   text-decoration: none;
 }
 
-/* TABLEAU */
+/* TABLES */
 
 table > thead {
   background-color: #f1f1f1;
 }
 td:first-child {
   padding-left: 1em;
+}
+
+/* TABLE OF CONTENS */
+
+.contents {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
 }

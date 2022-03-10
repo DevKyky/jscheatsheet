@@ -14,5 +14,5 @@ function operateurArithmetique() {
   
   document.getElementById(
     "operateurArithmetique"
-  ).innerHTML = `${operateurArithmetique}`;
+  ).innerHTML = operateurArithmetique;
   

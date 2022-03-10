@@ -17,5 +17,5 @@ function operateurLogique() {
   
   document.getElementById(
     "operateurLogique"
-  ).innerHTML = `${operateurLogique}`;
+  ).innerHTML = operateurLogique;
   

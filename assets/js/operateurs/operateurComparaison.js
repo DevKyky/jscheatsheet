@@ -17,4 +17,4 @@ function resultOpeComparaison() {
 
 document.getElementById(
   "operateurComparaison"
-).innerHTML = `${operateurComparaison}`;
+).innerHTML = operateurComparaison;
