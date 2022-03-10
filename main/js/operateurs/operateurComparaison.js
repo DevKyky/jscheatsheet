@@ -11,7 +11,7 @@ function operateurComparaison() {
   }
 }
 
-function result() {
+function resultOpeComparaison() {
   alert("Résultat : " + operateurComparaison());
 }
 

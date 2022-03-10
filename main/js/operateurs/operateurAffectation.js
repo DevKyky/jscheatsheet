@@ -9,7 +9,7 @@ function operateurAffectation() {
   return total;
 }
 
-function result() {
+function resultOpeAffectation() {
   alert("Résultat : " + operateurAffectation());
 }
 

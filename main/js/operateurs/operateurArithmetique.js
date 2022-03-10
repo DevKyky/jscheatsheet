@@ -8,7 +8,7 @@ function operateurArithmetique() {
     return unDeuxTrois
   }
   
-  function result() {
+  function resultOpeArithmetique() {
     alert("Résultat : " + operateurArithmetique());
   }
   

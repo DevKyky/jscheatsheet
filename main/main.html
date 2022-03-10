@@ -1,347 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>JavaScript Cheat Sheet</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Skeleton CSS -->
-    <link rel="stylesheet" href="../assets/css/normalize.css" />
-    <link rel="stylesheet" href="../assets/css/skeleton.css" />
+  <title>JavaScript Cheat Sheet</title>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/jscs.css" />
-  </head>
+  <!-- Skeleton CSS -->
+  <link rel="stylesheet" href="../assets/css/normalize.css" />
+  <link rel="stylesheet" href="../assets/css/skeleton.css" />
 
-  <body>
-    <header>
-      <h2>JS CheatSheet</h2>
-    </header>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/jscs.css" />
+</head>
 
-    <div class="container">
-      <main>
-        <div class="row">
-          <h3>Bienvenue sur JS CheatSheet</h3>
-          <p>This main.html page.</p>
+<body>
+  <header>
+    <h2>JS CheatSheet</h2>
+  </header>
+
+  <div class="container">
+    <main>
+      <div class="row">
+        <h3>Bienvenue sur JS CheatSheet</h3>
+        <p>This main.html page.</p>
+      </div>
+
+      <div class="row">
+        <div class="nine columns">
+          <!-- OPERATEURS -->
+          <article id="operators">
+            <h4>Les Opérateurs</h4>
+
+            <!-- OPERATEURS D'AFFECTATIONS -->
+            <section id="opeAffectation">
+              <h5>Opérateurs d'affectation</h5>
+
+              <p>
+                Une affectation permet assigner une valeur à l'opérande
+                gauche. Quelques opérateurs d'affectation :
+              </p>
+
+              <table class="u-full-width">
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>Opérateur</th>
+                    <th>Signification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Affectation</td>
+                    <td>a = b</td>
+                    <td>a = b</td>
+                  </tr>
+                  <tr>
+                    <td>Affectation après addition</td>
+                    <td>a += b</td>
+                    <td>a = a + b</td>
+                  </tr>
+                  <tr>
+                    <td>Affectation après soustraction</td>
+                    <td>a -= b</td>
+                    <td>a = a - b</td>
+                  </tr>
+                  <tr>
+                    <td>Affectation après multiplication</td>
+                    <td>a *= b</td>
+                    <td>a = a * b</td>
+                  </tr>
+                  <tr>
+                    <td>Affectation après division</td>
+                    <td>a /= b</td>
+                    <td>a = a / b</td>
+                  </tr>
+                  <tr>
+                    <td>Affectation du reste</td>
+                    <td>a %= b</td>
+                    <td>a = a % b</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultOpeAffectation()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="operateurAffectation">
+                            </code></pre>
+            </section>
+
+            <!-- OPERATEURS DE COMPARAISONS -->
+            <section id="opeComparaison">
+              <h5>Opérateurs de comparaison</h5>
+              <p>
+                L'opérateur de comparaison compare deux opérandes et retourne
+                une valeur booléenne (vraie ou fausse).
+              </p>
+
+              <table class="u-full-width">
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>Opérateur</th>
+                    <th>Exemple True</th>
+                    <th>Exemple False</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Egalité</td>
+                    <td>==</td>
+                    <td>1 == "1"</td>
+                    <td>1 == 2</td>
+                  </tr>
+                  <tr>
+                    <td>Inégalité</td>
+                    <td>!=</td>
+                    <td>1 != "2"</td>
+                    <td>3 != 3</td>
+                  </tr>
+                  <tr>
+                    <td>Supériorité stricte</td>
+                    <td>></td>
+                    <td>2 > 1</td>
+                    <td>1 > 1</td>
+                  </tr>
+                  <tr>
+                    <td>Supériorité ou égalité</td>
+                    <td>>=</td>
+                    <td>1 >= 1</td>
+                    <td>1 >= 2</td>
+                  </tr>
+                  <tr>
+                    <td>Infériorité stricte</td>
+                    <td><</td>
+                    </td>
+
+                    <td>1 < 3</td>
+                    <td>3 < 2</td>
+                  </tr>
+                  <tr>
+                    <td>Infériorité ou égalité</td>
+                    <td><=</td>
+                    </td>
+
+                    <td>1 <= 1</td>
+                    <td>2 <= 1</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p>
+                Pour tester une <strong>égalité ou inégalité stricte</strong>,
+                il faut utiliser l'opérateur <code>===</code> (pour l'égalité
+                stricte) ou bien <code>!==</code> pour l'inégalité stricte.
+              </p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultOpeComparaison()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="operateurComparaison">
+                            </code></pre>
+            </section>
+
+            <!-- OPERATEURS ARITHMETIQUES -->
+            <section id="opeArithmetique">
+              <h5>Opérateurs arithmétiques</h5>
+              <p>
+                En plus des opérateurs arithmétiques "classiques", JavaScript
+                fournit d'autres opérateurs :
+              </p>
+
+              <table class="u-full-width">
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>Opérateur</th>
+                    <th>Exemple #1</th>
+                    <th>Exemple #2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Reste</td>
+                    <td>%</td>
+                    <td>42 % 4 retourne 2</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Incrémentation</td>
+                    <td>++</td>
+                    <td>
+                      <code>i++</code> incrémente i de 1 et retourne la
+                      nouvelle valeur de i
+                    </td>
+                    <td>
+                      <code>++i</code> retourne la valeur de i puis incrémente
+                      i de 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Décrémentation</td>
+                    <td>--</td>
+                    <td>
+                      <code>i--</code> décrémente i de 1 et retourne la
+                      nouvelle valeur de i
+                    </td>
+                    <td>
+                      <code>--i</code> retourne la valeur de i puis décrémente
+                      i de 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Négation unaire</td>
+                    <td>-</td>
+                    <td>
+                      Si la variable <code>trois</code> vaut 3,
+                      <code>-trois</code> retourne <code>-3</code>
+                    </td>
+                    <td>
+                      Si la variable <code>trois</code> vaut -3,
+                      <code>-trois</code> retourne <code>3</code>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultOpeArithmetique()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="operateurArithmetique">
+                            </code></pre>
+            </section>
+
+            <!-- OPERATEURS LOGIQUES -->
+            <section id="opeLogiques">
+
+              <h5>Opérateurs Logiques</h5>
+              <p>
+                Les opérateurs logiques combinent des valeurs booléennes pour
+                retourner une nouvelle valeur booléenne. Dans le cas où les
+                valeurs ne peuvent pas retourner une valeur booléenne, une
+                valeur non-booléenne sera retournée.
+              </p>
+
+              <table class="u-full-width">
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>Opérateur</th>
+                    <th>Exemple</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ET logique</td>
+                    <td>&&</td>
+                    <td>expr1 <code>&&</code> expr2</td>
+                    <td>Retourne expr1 s'il peut retourner une valeur booléan, sinon renvoie expr2. Retourne
+                      <code>true</code> si les deux expressions valent true, sinon retourne <code>false</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>OU logique</td>
+                    <td>||</td>
+                    <td>expr1 <code>||</code> expr2</td>
+                    <td>Retourne expr1 s'il peut retourner <code>true</code>, sinon renvoie expr2. Retourne
+                      <code>true</code> si l'une des expressions vaut true, sinon retourne <code>false</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>NON logique</td>
+                    <td>!</td>
+                    <td><code>!</code>expr</td>
+                    <td>Retourne <code>false</code> si expr peut retourner true, sinon retourne <code>true</code></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultOpeLogique()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="operateurLogique">
+                            </code></pre>
+
+            </section>
+
+            <!-- OPERATEURS DE CHAINES DE CARACTERES -->
+            <section id="opeChainesCaracteres">
+
+              <h5>Opérateurs de chaînes de caractères</h5>
+              <p>Il est possible de concaténer plusieurs chaînes de caractères comme ceci :</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultOpeChaineCarac1()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="operateurChaineCaractere1">
+              </code></pre>
+
+              <p>Il est également possible de concaténer de cette manière :</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultOpeChaineCarac2()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="operateurChaineCaractere2">
+              </code></pre>
+
+            </section>
+
+            <!-- OPERATEUR TERNAIRE -->
+            <section id="opeTernaire">
+
+              <h5>L'opérateur conditionnel ternaire</h5>
+              <p>Une ternaire est un façon courte d'écrire l'instruction <code>if else</code>.</p>
+              <p>Une ternaire se présente comme ceci : <code>(instruction) ? val1 : val2</code>.
+                <code>(instruction)</code> correspond à <code>if (instruction)</code>, le <code>?</code> se traduit par
+                <code>alors</code> et <code>:</code> par <code>sinon</code>.
+              </p>
+              <p>Voici un exemple de ternaire on reprenant le second exemple des opérateurs de chaînes de caractères.
+              </p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultOpeTernaire()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="operateurTernaire">
+              </code></pre>
+
+            </section>
+
+          </article>
+
         </div>
 
-        <div class="row">
-          <div class="nine columns">
-            <!-- OPERATEURS -->
-            <article id="operators">
-              <h4>Les Opérateurs</h4>
+        <div class="three columns">
+          <h5>Sommaire</h5>
 
-              <!-- OPERATEURS D'AFFECTATIONS -->
-              <section id="opeAffectation">
-                <h5>Opérateurs d'affectation</h5>
-
-                <p>
-                  Une affectation permet assigner une valeur à l'opérande
-                  gauche. Quelques opérateurs d'affectation :
-                </p>
-
-                <table class="u-full-width">
-                  <thead>
-                    <tr>
-                      <th>&nbsp;</th>
-                      <th>Opérateur</th>
-                      <th>Signification</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Affectation</td>
-                      <td>a = b</td>
-                      <td>a = b</td>
-                    </tr>
-                    <tr>
-                      <td>Affectation après addition</td>
-                      <td>a += b</td>
-                      <td>a = a + b</td>
-                    </tr>
-                    <tr>
-                      <td>Affectation après soustraction</td>
-                      <td>a -= b</td>
-                      <td>a = a - b</td>
-                    </tr>
-                    <tr>
-                      <td>Affectation après multiplication</td>
-                      <td>a *= b</td>
-                      <td>a = a * b</td>
-                    </tr>
-                    <tr>
-                      <td>Affectation après division</td>
-                      <td>a /= b</td>
-                      <td>a = a / b</td>
-                    </tr>
-                    <tr>
-                      <td>Affectation du reste</td>
-                      <td>a %= b</td>
-                      <td>a = a % b</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <div class="row">
-                  <p class="three columns">Exemple :</p>
-                  <span class="six columns">&nbsp</span>
-                  <button
-                    class="three columns"
-                    type="button"
-                    onclick="result()"
-                  >
-                    Résultat
-                  </button>
-                </div>
-
-                <pre><code id="operateurAffectation">
-                            </code></pre>
-              </section>
-
-              <!-- OPERATEURS DE COMPARAISONS -->
-              <section id="opeComparaison">
-                <h5>Opérateurs de comparaison</h5>
-                <p>
-                  L'opérateur de comparaison compare deux opérandes et retourne
-                  une valeur booléenne (vraie ou fausse).
-                </p>
-
-                <table class="u-full-width">
-                  <thead>
-                    <tr>
-                      <th>&nbsp;</th>
-                      <th>Opérateur</th>
-                      <th>Exemple True</th>
-                      <th>Exemple False</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Egalité</td>
-                      <td>==</td>
-                      <td>1 == "1"</td>
-                      <td>1 == 2</td>
-                    </tr>
-                    <tr>
-                      <td>Inégalité</td>
-                      <td>!=</td>
-                      <td>1 != "2"</td>
-                      <td>3 != 3</td>
-                    </tr>
-                    <tr>
-                      <td>Supériorité stricte</td>
-                      <td>></td>
-                      <td>2 > 1</td>
-                      <td>1 > 1</td>
-                    </tr>
-                    <tr>
-                      <td>Supériorité ou égalité</td>
-                      <td>>=</td>
-                      <td>1 >= 1</td>
-                      <td>1 >= 2</td>
-                    </tr>
-                    <tr>
-                      <td>Infériorité stricte</td>
-                      <td><< /td></td>
-
-                      <td>1 < 3</td>
-                      <td>3 < 2</td>
-                    </tr>
-                    <tr>
-                      <td>Infériorité ou égalité</td>
-                      <td><=< /td></td>
-
-                      <td>1 <= 1</td>
-                      <td>2 <= 1</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <p>
-                  Pour tester une <strong>égalité ou inégalité stricte</strong>,
-                  il faut utiliser l'opérateur <code>===</code> (pour l'égalité
-                  stricte) ou bien <code>!==</code> pour l'inégalité stricte.<br />Exemple
-                  :
-                </p>
-
-                <div class="row">
-                  <p class="three columns">Exemple :</p>
-                  <span class="six columns">&nbsp</span>
-                  <button
-                    class="three columns"
-                    type="button"
-                    onclick="result()"
-                  >
-                    Résultat
-                  </button>
-                </div>
-
-                <pre><code id="operateurComparaison">
-                            </code></pre>
-              </section>
-
-              <!-- OPERATEURS ARITHMETIQUES -->
-              <section id="opeArithmetique">
-                <h5>Opérateurs arithmétiques</h5>
-                <p>
-                  En plus des opérateurs arithmétiques "classiques", JavaScript
-                  fournit d'autres opérateurs :
-                </p>
-
-                <table class="u-full-width">
-                  <thead>
-                    <tr>
-                      <th>&nbsp;</th>
-                      <th>Opérateur</th>
-                      <th>Exemple #1</th>
-                      <th>Exemple #2</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Reste</td>
-                      <td>%</td>
-                      <td>42 % 4 retourne 2</td>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td>Incrémentation</td>
-                      <td>++</td>
-                      <td>
-                        <code>i++</code> incrémente i de 1 et retourne la
-                        nouvelle valeur de i
-                      </td>
-                      <td>
-                        <code>++i</code> retourne la valeur de i puis incrémente
-                        i de 1
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Décrémentation</td>
-                      <td>--</td>
-                      <td>
-                        <code>i--</code> décrémente i de 1 et retourne la
-                        nouvelle valeur de i
-                      </td>
-                      <td>
-                        <code>--i</code> retourne la valeur de i puis décrémente
-                        i de 1
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Négation unaire</td>
-                      <td>-</td>
-                      <td>
-                        Si la variable <code>trois</code> vaut 3,
-                        <code>-trois</code> retourne <code>-3</code>
-                      </td>
-                      <td>
-                        Si la variable <code>trois</code> vaut -3,
-                        <code>-trois</code> retourne <code>3</code>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <div class="row">
-                  <p class="three columns">Exemple :</p>
-                  <span class="six columns">&nbsp</span>
-                  <button
-                    class="three columns"
-                    type="button"
-                    onclick="result()"
-                  >
-                    Résultat
-                  </button>
-                </div>
-
-                <pre><code id="operateurArithmetique">
-                            </code></pre>
-              </section>
-
-              <!-- OPERATEURS LOGIQUES -->
-              <section id="opeLogiques">
-                
-                <h5>Opérateurs Logiques</h5>
-                <p>
-                  Les opérateurs logiques combinent des valeurs booléennes pour
-                  retourner une nouvelle valeur booléenne. Dans le cas où les
-                  valeurs ne peuvent pas retourner une valeur booléenne, une
-                  valeur non-booléenne sera retournée.
-                </p>
-
-              </section>
-            </article>
-
-            <article id="variables">
-              <h5>Title</h5>
-              <p>Text</p>
-              <pre><code id="operateurAffectation">
-                        </code></pre>
-            </article>
-
-            <article id="functions">
-              <h5>Title</h5>
-              <p>Text</p>
-              <pre><code id="operateurAffectation">
-                        </code></pre>
-            </article>
-
-            <article id="utilities">
-              <h5>Title</h5>
-              <p>Text</p>
-              <pre><code id="operateurAffectation">
-                        </code></pre>
-            </article>
-          </div>
-
-          <div class="three columns">
-            <h5>Sommaire</h5>
-
+          <ul>
+            <li><a href="#operators">Les opérateurs</a></li>
             <ul>
-              <li><a href="#operators">Les opérateurs</a></li>
-              <ul>
-                <li>
-                  <a href="#opeAffectation">Les opérateurs d'affectation</a>
-                </li>
-                <li>
-                  <a href="#opeComparaison">Les opérateurs de comparaison</a>
-                </li>
-                <li>
-                  <a href="#opeArithmetique">Les opérateurs arithmétiques</a>
-                </li>
-                <li>
-                  <a href="#opeLogiques">Les opérateurs logiques</a>
-                </li>
-                <li>
-                  <a href="#opeChaineCaracteres"
-                    >Les opérateurs de chaînes de caractères</a
-                  >
-                </li>
-              </ul>
-
-              <li><a href="#variables">Variables</a></li>
-
-              <li><a href="#functions">Functions</a></li>
-
-              <li><a href="#utilities">Utilities</a></li>
+              <li>
+                <a href="#opeAffectation">Les opérateurs d'affectation</a>
+              </li>
+              <li>
+                <a href="#opeComparaison">Les opérateurs de comparaison</a>
+              </li>
+              <li>
+                <a href="#opeArithmetique">Les opérateurs arithmétiques</a>
+              </li>
+              <li>
+                <a href="#opeLogiques">Les opérateurs logiques</a>
+              </li>
+              <li>
+                <a href="#opeChainesCaracteres">Les opérateurs de chaînes de caractères</a>
+              </li>
+              <li>
+                <a href="#opeTernaire">L'opérateur conditionnel ternaire</a>
+              </li>
             </ul>
-          </div>
+          </ul>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
+  </div>
 
-    <footer>
-      <p>
-        Déveloped by <a href="https://github.com/DevKyky">DevKyky</a>. Based on
-        the style of <a href="http://getskeleton.com/">Skeleton</a>
-      </p>
-    </footer>
+  <footer>
+    <p>
+      Déveloped by <a href="https://github.com/DevKyky">DevKyky</a>. Based on
+      the style of <a href="http://getskeleton.com/">Skeleton</a>
+    </p>
+  </footer>
 
-    <script src="../main/js/operateurs/operateurAffectation.js"></script>
-    <script src="../main/js/operateurs/operateurComparaison.js"></script>
-    <script src="../main/js/operateurs/operateurArithmetique.js"></script>
-  </body>
+  <script src="../main/js/operateurs/operateurAffectation.js"></script>
+  <script src="../main/js/operateurs/operateurComparaison.js"></script>
+  <script src="../main/js/operateurs/operateurArithmetique.js"></script>
+  <script src="../main/js/operateurs/operateurLogique.js"></script>
+  <script src="../main/js/operateurs/operateurChaineCaractere1.js"></script>
+  <script src="../main/js/operateurs/operateurChaineCaractere2.js"></script>
+  <script src="../main/js/operateurs/operateurTernaire.js"></script>
+</body>
+
 </html>
