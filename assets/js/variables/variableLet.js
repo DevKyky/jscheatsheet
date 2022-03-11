@@ -1,5 +1,4 @@
 function variableVarLet() {
-  // Exemple avec la variable let
   let hello = "Hello There";
 
   {
@@ -13,4 +12,5 @@ function resultVarLet() {
   alert("Résultat : " + variableVarLet());
 }
 
-document.getElementById("variableLet").innerHTML = variableVarLet;
+document.getElementById("variableLet").innerHTML =
+  'let hello = "Hello There";\n\n{\n let hello = "Hello World";\n}\n\nconsole.log(hello);';

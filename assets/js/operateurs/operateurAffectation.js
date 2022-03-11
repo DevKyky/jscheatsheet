@@ -1,10 +1,8 @@
 function operateurAffectation() {
-  // Exemple d'affectation après addition
-  let total = 0;
-  let b = 2;
+  let total = 2;
 
-  total += b; // 2
-  total += b; // 4
+  total += total; // 4
+  total += total; // 8
 
   return total;
 }
@@ -13,6 +11,5 @@ function resultOpeAffectation() {
   alert("Résultat : " + operateurAffectation());
 }
 
-document.getElementById(
-  "operateurAffectation"
-).innerHTML = operateurAffectation;
+document.getElementById("operateurAffectation").innerHTML =
+  "let total = 2;\ntotal += total; // 4\ntotal += total; // 8\n\nconsole.log(total);";
