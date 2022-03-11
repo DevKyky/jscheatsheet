@@ -536,6 +536,53 @@
 
             </section>
 
+            <section id="dataTypeTypeof">
+
+              <h5>L'Opérateur Typeof</h5>
+              <p>L'opérateur <code>Typeof</code> retourne une chaîne indiquant le type.</p>
+
+              <table class="u-full-width">
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>Résultat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>typeof 'chaine'</td>
+                    <td>String</td>
+                  </tr>
+                  <tr>
+                    <td>typeof 42</td>
+                    <td>number</td>
+                  </tr>
+                  <tr>
+                    <td>typeof true</td>
+                    <td>boolean</td>
+                  </tr>
+                  <tr>
+                    <td><code>typeof maVariable</code> ou <code>typeof maVariable()</code></td>
+                    <td>undefined</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p>Si la variable est définie, <code>typeof</code> retournera le type et non <code>undefined</code>. Si la fonction ne retourne rien, <code>undefined</code> est retourné ; sinon <code>typeof</code> retournera le type.</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultDatatTypeof()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="datatTypeof">
+              </code></pre>
+
+            </section>
+
           </article>
 
         </div>
@@ -621,6 +668,7 @@
   <script src="/assets/js/datatypes/dataTypeString.js"></script>
   <script src="/assets/js/datatypes/dataTypeNull.js"></script>
   <script src="/assets/js/datatypes/dataTypeUndefined.js"></script>
+  <script src="/assets/js/datatypes/dataTypeTypeof.js"></script>
 
 </body>
 
