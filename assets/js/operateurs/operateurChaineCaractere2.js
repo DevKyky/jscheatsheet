@@ -1,22 +1,13 @@
 function operateurChaineCaractere2() {
-    // Exemple d'opérateur de chaînes de caractères
-    let maChaine = "Je suis ";
-    let monAge = 17;
+  let maChaine = "J'ai ";
+  let monAge = "17 ans";
 
-    if (monAge >= 18) {
-        maChaine += "majeur";
-    } else {
-        maChaine += "mineur";
-    }
-     
-    return maChaine;
-  }
-  
-  function resultOpeChaineCarac2() {
-    alert("Résultat : " + operateurChaineCaractere2());
-  }
-  
-  document.getElementById(
-    "operateurChaineCaractere2"
-  ).innerHTML = operateurChaineCaractere2;
-  
+  return (maChaine += monAge);
+}
+
+function resultOpeChaineCarac2() {
+  alert("Résultat : " + operateurChaineCaractere2());
+}
+
+document.getElementById("operateurChaineCaractere2").innerHTML =
+  'let maChaine = "J\'ai ";\nlet monAge = "17 ans";\n\nconsole.log(maChaine += monAge);';

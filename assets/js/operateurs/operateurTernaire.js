@@ -1,22 +1,14 @@
 function operateurTernaire() {
-    // Exemple d'opérateur de chaînes de caractères
-    let maChaine = "Je suis ";
-    let monAge = 17;
+  let maChaine = "Je suis ";
 
-    /* Si mon âge est supérieur ou égal à 18,
-        ? "alors" je concatène maChaine avec "majeur"
-        : "sinon" je concatène maChaine avec "mineur"
-    */
-    (monAge >= 18) ? maChaine += "majeur" : maChaine += "mineur";
-     
-    return maChaine;
-  }
-  
-  function resultOpeTernaire() {
-    alert("Résultat : " + operateurTernaire());
-  }
-  
-  document.getElementById(
-    "operateurTernaire"
-  ).innerHTML = operateurTernaire;
-  
+  42 >= 18 ? (maChaine += "majeur") : (maChaine += "mineur");
+
+  return maChaine;
+}
+
+function resultOpeTernaire() {
+  alert("Résultat : " + operateurTernaire());
+}
+
+document.getElementById("operateurTernaire").innerHTML =
+  'let maChaine = "Je suis ";\n\n(42 >= 18) ? maChaine += "majeur" : maChaine += "mineur";\n\nconsole.log(maChaine);';

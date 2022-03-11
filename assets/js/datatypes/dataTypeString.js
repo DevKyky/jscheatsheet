@@ -1,5 +1,4 @@
 function dataTypeString() {
-  // Exemple type string
   let nouvelle = "nouvelle";
   let maChaine = `ma ${nouvelle} chaîne`;
 
@@ -10,4 +9,5 @@ function resultDatatString() {
   alert("Résultat : " + dataTypeString());
 }
 
-document.getElementById("datatString").innerHTML = dataTypeString;
+document.getElementById("datatString").innerHTML =
+  'let nouvelle = "nouvelle";\nlet maChaine = `ma ${nouvelle} chaîne`;\n\nconsole.log(maChaine);';

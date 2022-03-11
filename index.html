@@ -142,7 +142,8 @@
                   </tr>
                   <tr>
                     <td>Infériorité stricte</td>
-                    <td><</td>
+                    <td>
+                      << /td>
                     </td>
 
                     <td>1 < 3</td>
@@ -150,7 +151,8 @@
                   </tr>
                   <tr>
                     <td>Infériorité ou égalité</td>
-                    <td><=</td>
+                    <td>
+                      <=< /td>
                     </td>
 
                     <td>1 <= 1</td>
@@ -397,7 +399,8 @@
                 avec "Hello World" car la redéclaration de la variable se trouve dans un autre bloc (symbolisé avec
                 <code>{}</code>).<br>Si le return aurait été effectué dans le bloc après la redéclaration de la
                 variable, "Hello World" aurait été retourné. Cependant, si le return est effectué avant la redéclaration
-                dans le bloc, une erreur se serait produite.</p>
+                dans le bloc, une erreur se serait produite.
+              </p>
               <p>Il n'est pas possible de redéclarer une variable dans un même bloc.</p>
 
             </section>
@@ -472,14 +475,17 @@
             <section id="dataTypeString">
 
               <h5>Le type string</h5>
-              <p>Le type string est une suite de caractères. Elle se trouve le plus souvent dans des apostrophes doubles mais il existe plusieurs façon de la représenter.</p>
+              <p>Le type string est une suite de caractères. Elle se trouve le plus souvent dans des apostrophes doubles
+                mais il existe plusieurs façon de la représenter.</p>
               <li>
                 Double apostrophes : <code>let chaine = "ma chaine de caractères";</code>
               </li>
               <li>
                 Apostrophes simples : <code>let chaine = 'C\'est une chaine de caractères';</code>
               </li>
-              <p>En utilisant les apostrophes simples, si un ou plusieurs mots utilise une apostrophe il faut veiller à "échapper" les caractères avec un <code>\</code>. Sinon, ce sera interprété comme ceci : <code>let chaine = 'C'</code> et produira une erreur ne sachant pas interprêter la suite.</p>
+              <p>En utilisant les apostrophes simples, si un ou plusieurs mots utilise une apostrophe il faut veiller à
+                "échapper" les caractères avec un <code>\</code>. Sinon, ce sera interprété comme ceci :
+                <code>let chaine = 'C'</code> et produira une erreur ne sachant pas interprêter la suite.</p>
               <li>
                 Barres verticales (pipe en anglais) : <code>let chaine = `ma chaine`;</code>
               </li>
@@ -502,7 +508,8 @@
             <section id="dataTypeNull">
 
               <h5>Le type null</h5>
-              <p>Le type null permet de définir une variable sans qu'elle n'ai de réel valeur car elle vaudra <code>null</code>.</p>
+              <p>Le type null permet de définir une variable sans qu'elle n'ai de réel valeur car elle vaudra
+                <code>null</code>.</p>
 
               <div class="row">
                 <p class="three columns">Exemple :</p>
@@ -568,7 +575,9 @@
                 </tbody>
               </table>
 
-              <p>Si la variable est définie, <code>typeof</code> retournera le type et non <code>undefined</code>. Si la fonction ne retourne rien, <code>undefined</code> est retourné ; sinon <code>typeof</code> retournera le type.</p>
+              <p>Si la variable est définie, <code>typeof</code> retournera le type et non <code>undefined</code>. Si la
+                fonction ne retourne rien, <code>undefined</code> est retourné ; sinon <code>typeof</code> retournera le
+                type.</p>
 
               <div class="row">
                 <p class="three columns">Exemple :</p>
@@ -585,54 +594,228 @@
 
           </article>
 
+          <!-- STRUCTURES DE CONTROLE -->
+          <article id="structControle">
+
+            <h4>Les Structures de contrôle</h4>
+
+            <!-- STRUCTURE IF ELSE -->
+            <section id="structControleIfElse">
+
+              <h5>La structure if else</h5>
+              <p>
+                <code>If Else</code> permet de vérifier si une condition est vraie ( <code>true</code> ). Si la
+                condition est vraie, le code se trouvant dans le <code>if</code> sera exécuté ; si elle est fausse, le
+                code se trouvant dans le <code>else</code> sera exécuté.
+              </p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultStControleIf()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="stControleIf">
+              </code></pre>
+
+            </section>
+
+            <!-- STRUCTURE FOR -->
+            <section id="structControleFor">
+
+              <h5>La structure for</h5>
+              <p>
+                La boucle <code>for</code> permet d'exécuter un bloc plusieurs fois. Pour que la boucle puisse
+                s'arrêter, il faut utiliser un compteur. Lors de la déclaration de la boucle, il faut donc indiquer :
+                <li>Une valeur initiale</li>
+                <li>Une valeur finale</li>
+                <li>Un pas</li>
+                La boucle partira de la valeur initiale et s'incrémentera du pas jusqu'à la valeur finale où la boucle
+                prendra fin.
+              </p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultStControleFor()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="stControleFor">
+              </code></pre>
+
+            </section>
+
+            <!-- STRUCTURE WHILE -->
+            <section id="structControleWhile">
+
+              <h5>La structure while</h5>
+              <p>
+                La boucle while se traduit par "<i>tant que la condition est vraie</i>". La boucle s'exécutera donc
+                jusqu'à ce que la condition soit complétée.
+              </p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultStControleWhile()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="stControleWhile">
+              </code></pre>
+
+            </section>
+
+            <!-- STRUCTURE BREAK -->
+            <section id="structControleBreak">
+
+              <h5>La structure break</h5>
+              <p>
+                L'instruction <code>break</code> permet de sortir d'une boucle ( <code>for</code> ou <code>while</code>
+                ).
+              </p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultStControleBreak()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="stControleBreak">
+              </code></pre>
+
+            </section>
+
+            <!-- STRUCTURE CONTINUE -->
+            <section id="structControleContinue">
+
+              <h5>La structure continue</h5>
+              <p>
+                L'instruction <code>continue</code> permet d'ignorer l'itération en cours.
+              </p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultStControleContinue()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="stControleContinue">
+              </code></pre>
+
+            </section>
+
+            <!-- STRUCTURE SWITCH CASE -->
+            <section id="structControleSwitch">
+
+              <h5>La structure switch case</h5>
+              <p>
+                La structure <code>switch case</code> permet d'exécuter le cas correspondant à l'expression.
+              </p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultStControleSwitch()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="stControleSwitch">
+              </code></pre>
+
+            </section>
+
+          </article>
+
         </div>
 
+        <!-- SOMMAIRE -->
         <div class="contents three columns">
           <h5>Sommaire</h5>
 
           <ul>
 
-            <li><a href="#operateurs">Les opérateurs</a></li>
-            <ul>
-              <li>
-                <a href="#opeAffectation">Les opérateurs d'affectation</a>
-              </li>
-              <li>
-                <a href="#opeComparaison">Les opérateurs de comparaison</a>
-              </li>
-              <li>
-                <a href="#opeArithmetique">Les opérateurs arithmétiques</a>
-              </li>
-              <li>
-                <a href="#opeLogiques">Les opérateurs logiques</a>
-              </li>
-              <li>
-                <a href="#opeChainesCaracteres">Les opérateurs de chaînes de caractères</a>
-              </li>
-              <li>
-                <a href="#opeTernaire">L'opérateur conditionnel ternaire</a>
-              </li>
-            </ul>
+            <!-- OPERATEURS -->
+            <details open>
+              <summary>
+                <li><a href="#operateurs">Les opérateurs</a></li>
+              </summary>
+              <ul>
+                <li>
+                  <a href="#opeAffectation">Les opérateurs d'affectation</a>
+                </li>
+                <li>
+                  <a href="#opeComparaison">Les opérateurs de comparaison</a>
+                </li>
+                <li>
+                  <a href="#opeArithmetique">Les opérateurs arithmétiques</a>
+                </li>
+                <li>
+                  <a href="#opeLogiques">Les opérateurs logiques</a>
+                </li>
+                <li>
+                  <a href="#opeChainesCaracteres">Les opérateurs de chaînes de caractères</a>
+                </li>
+                <li>
+                  <a href="#opeTernaire">L'opérateur conditionnel ternaire</a>
+                </li>
+              </ul>
+            </details>
 
-            <li><a href="#variables">Les variables</a></li>
-            <ul>
-              <li>
-                <a href="#varTest">La variable let</a>
-              </li>
-              <li>
-                <a href="#varConst">La variable const</a>
-              </li>
-            </ul>
+            <!-- VARIABLES -->
+            <details>
+              <summary>
+                <li><a href="#variables">Les variables</a></li>
+              </summary>
+              <ul>
+                <li>
+                  <a href="#varTest">La variable let</a>
+                </li>
+                <li>
+                  <a href="#varConst">La variable const</a>
+                </li>
+              </ul>
+            </details>
 
-            <li><a href="#dataType">Les types de données</a></li>
-            <ul>
-              <li><a href="#dataTypeNumber">Le type number</a></li>
-              <li><a href="#dataTypeBoolean">Le type booléen</a></li>
-              <li><a href="#dataTypeString">Le type string</a></li>
-              <li><a href="#dataTypeNull">Le type null</a></li>
-              <li><a href="#dataTypeUndefined">Le type undefined</a></li>
-              <li><a href="#dataTypeTypeof">Opérateur Typeof</a></li>
-            </ul>
+            <!-- TYPES DE DONNEES -->
+            <details>
+              <summary>
+                <li><a href="#dataType">Les types de données</a></li>
+              </summary>
+              <ul>
+                <li><a href="#dataTypeNumber">Le type number</a></li>
+                <li><a href="#dataTypeBoolean">Le type booléen</a></li>
+                <li><a href="#dataTypeString">Le type string</a></li>
+                <li><a href="#dataTypeNull">Le type null</a></li>
+                <li><a href="#dataTypeUndefined">Le type undefined</a></li>
+                <li><a href="#dataTypeTypeof">Opérateur Typeof</a></li>
+              </ul>
+            </details>
+
+            <!-- STRUCTURES DE CONTROLE -->
+            <details>
+              <summary>
+                <li><a href="#structControle">Les structures de contrôle</a></li>
+              </summary>
+              <ul>
+                <li><a href="#structControleIfElse">If Else</a></li>
+                <li><a href="#structControleFor">For</a></li>
+                <li><a href="#structControleWhile">While</a></li>
+                <li><a href="#structControleBreak">Break</a></li>
+                <li><a href="#structControleContinu">Continue</a></li>
+                <li><a href="#structControleSwitch">Switch Case</a></li>
+              </ul>
+            </details>
 
           </ul>
         </div>
@@ -669,6 +852,14 @@
   <script src="/assets/js/datatypes/dataTypeNull.js"></script>
   <script src="/assets/js/datatypes/dataTypeUndefined.js"></script>
   <script src="/assets/js/datatypes/dataTypeTypeof.js"></script>
+
+  <!-- SCRIPTS STRUCTURES DE CONTROLE -->
+  <script src="/assets/js/structuresControle/structureControleIfElse.js"></script>
+  <script src="/assets/js/structuresControle/structureControleFor.js"></script>
+  <script src="/assets/js/structuresControle/structureControleWhile.js"></script>
+  <script src="/assets/js/structuresControle/structureControleBreak.js"></script>
+  <script src="/assets/js/structuresControle/structureControleContinue.js"></script>
+  <script src="/assets/js/structuresControle/structureControleSwitchCase.js"></script>
 
 </body>
 

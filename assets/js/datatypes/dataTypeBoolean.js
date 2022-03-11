@@ -1,11 +1,9 @@
 function dataTypeBool() {
-  // Exemple type boolean
-  // 2 est supérieur à 1, c'est vrai
-  return 2 > 1; // true
+  return 2 > 1;
 }
 
 function resultDatatBool() {
   alert("Résultat : " + dataTypeBool());
 }
 
-document.getElementById("datatBool").innerHTML = dataTypeBool;
+document.getElementById("datatBool").innerHTML = "console.log(2 > 1); //true";
