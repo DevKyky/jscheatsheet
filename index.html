@@ -543,6 +543,7 @@
 
             </section>
 
+            <!-- TYPE TYPEOF -->
             <section id="dataTypeTypeof">
 
               <h5>L'Opérateur Typeof</h5>
@@ -737,6 +738,100 @@
 
           </article>
 
+          <!-- LES FONCTIONS -->
+          <article id="fonctions">
+
+            <h4>Les fonctions</h4>
+
+            <!-- FONCTION SIMPLE -->
+            <section id="fonctionSimple">
+
+              <h5>Les fonctions simples</h5>
+              <p>Une fonction est un bloc de code portant un nom et est réutilisable. Elle permet d'effectuer une tâche précise. Il est possible de passer un ou plusieurs paramètres lorsqu'elle est définie.</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultFuncSimple()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="funcSimple">
+              </code></pre>
+
+              <p>Une fonction doit toujours être déclarée avant d'être appelée. Une variable déclarée à l'intérieur d'une fonction n'est pas accessible à l'extérieur. De la même façon, la valeur d'une variable redéclarée à l'intérieur primera sur la valeur passée en paramètre.</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultFuncSimpleSuite()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="funcSimpleSuite">
+              </code></pre>
+
+            </section>
+
+            <!-- FONCTION FLECHEE -->
+            <section id="fonctionFlechee">
+
+              <h5>Les fonctions fléchées</h5>
+              <p>Une fonction fléchée a une syntaxe plus simple qu'une fonction "classique". Elle possède deux syntaxes, une première -sans accolades- permettant d'être écrite sur une seule ligne ; et une seconde -avec accolades- qui est multiligne et requiert un <code>return</code>.</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultFuncFlechee()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="funcFlechee">
+              </code></pre>
+
+              <p>Le code ci-dessus revient à créer une fonction <code>addition</code> qui prend en paramètre <code>a</code> et <code>b</code> puis retourne le résultat de l'expression se trouvant à droite de la flèche (<code>=></code>).</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultFuncFlecheeMulti()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="funcFlecheeMulti">
+              </code></pre>
+
+            </section>
+
+            </section>
+
+            <!-- FONCTION ANONYME -->
+            <section id="fonctionAnonyme">
+
+              <h5>Les fonctions anonymes</h5>
+              <p>Une fonction anonyme ne possède pas de nom et s'auto-exécute dès qu'elle est définie. Elle est utilisée lorsque l'on sait que notre fonction ne sera pas réutilisée dans le code.</p>
+
+              <div class="row">
+                <p class="three columns">Exemple :</p>
+                <span class="six columns">&nbsp</span>
+                <button class="three columns" type="button" onclick="resultFuncAnonyme()">
+                  Résultat
+                </button>
+              </div>
+
+              <pre><code id="funcAnonyme">
+              </code></pre>
+
+              <p>Les parenthèses avant la flèche (<code>()</code>) signifie <code>function maFonction()</code>. Ce qui se trouve dans les accolades est notre bloc de code et les paranthèses à la fin correspondent aux paramètres.</p>
+
+            </section>
+
+          </article>
+
         </div>
 
         <!-- SOMMAIRE -->
@@ -817,6 +912,18 @@
               </ul>
             </details>
 
+            <!-- FONCTIONS -->
+            <details>
+              <summary>
+                <li><a href="#fonctions">Les fonctions</a></li>
+              </summary>
+              <ul>
+                <li><a href="#fonctionSimple">Fonction simple</a></li>
+                <li><a href="#fonctionFlechee">Fonction fléchée</a></li>
+                <li><a href="#fonctionAnonyme">Fonction anonyme</a></li>
+              </ul>
+            </details>
+
           </ul>
         </div>
       </div>
@@ -860,6 +967,13 @@
   <script src="/assets/js/structuresControle/structureControleBreak.js"></script>
   <script src="/assets/js/structuresControle/structureControleContinue.js"></script>
   <script src="/assets/js/structuresControle/structureControleSwitchCase.js"></script>
+
+  <!-- SCRIPTS FONCTIONS -->
+  <script src="/assets/js/fonctions/fonctionSimple.js"></script>
+  <script src="/assets/js/fonctions/fonctionSimpleSuite.js"></script>
+  <script src="/assets/js/fonctions/fonctionFlechee.js"></script>
+  <script src="/assets/js/fonctions/fonctionFlecheeMulti.js"></script>
+  <script src="/assets/js/fonctions/fonctionAnonyme.js"></script>
 
 </body>
 
