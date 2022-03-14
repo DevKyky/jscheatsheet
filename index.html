@@ -142,8 +142,7 @@
                   </tr>
                   <tr>
                     <td>Infériorité stricte</td>
-                    <td>
-                      << /td>
+                    <td><</td>
                     </td>
 
                     <td>1 < 3</td>
@@ -151,8 +150,7 @@
                   </tr>
                   <tr>
                     <td>Infériorité ou égalité</td>
-                    <td>
-                      <=< /td>
+                    <td><=</td>
                     </td>
 
                     <td>1 <= 1</td>
@@ -485,7 +483,8 @@
               </li>
               <p>En utilisant les apostrophes simples, si un ou plusieurs mots utilise une apostrophe il faut veiller à
                 "échapper" les caractères avec un <code>\</code>. Sinon, ce sera interprété comme ceci :
-                <code>let chaine = 'C'</code> et produira une erreur ne sachant pas interprêter la suite.</p>
+                <code>let chaine = 'C'</code> et produira une erreur ne sachant pas interprêter la suite.
+              </p>
               <li>
                 Barres verticales (pipe en anglais) : <code>let chaine = `ma chaine`;</code>
               </li>
@@ -509,7 +508,8 @@
 
               <h5>Le type null</h5>
               <p>Le type null permet de définir une variable sans qu'elle n'ai de réel valeur car elle vaudra
-                <code>null</code>.</p>
+                <code>null</code>.
+              </p>
 
               <div class="row">
                 <p class="three columns">Exemple :</p>
@@ -747,7 +747,8 @@
             <section id="fonctionSimple">
 
               <h5>Les fonctions simples</h5>
-              <p>Une fonction est un bloc de code portant un nom et est réutilisable. Elle permet d'effectuer une tâche précise. Il est possible de passer un ou plusieurs paramètres lorsqu'elle est définie.</p>
+              <p>Une fonction est un bloc de code portant un nom et est réutilisable. Elle permet d'effectuer une tâche
+                précise. Il est possible de passer un ou plusieurs paramètres lorsqu'elle est définie.</p>
 
               <div class="row">
                 <p class="three columns">Exemple :</p>
@@ -760,7 +761,9 @@
               <pre><code id="funcSimple">
               </code></pre>
 
-              <p>Une fonction doit toujours être déclarée avant d'être appelée. Une variable déclarée à l'intérieur d'une fonction n'est pas accessible à l'extérieur. De la même façon, la valeur d'une variable redéclarée à l'intérieur primera sur la valeur passée en paramètre.</p>
+              <p>Une fonction doit toujours être déclarée avant d'être appelée. Une variable déclarée à l'intérieur
+                d'une fonction n'est pas accessible à l'extérieur. De la même façon, la valeur d'une variable redéclarée
+                à l'intérieur primera sur la valeur passée en paramètre.</p>
 
               <div class="row">
                 <p class="three columns">Exemple :</p>
@@ -779,7 +782,9 @@
             <section id="fonctionFlechee">
 
               <h5>Les fonctions fléchées</h5>
-              <p>Une fonction fléchée a une syntaxe plus simple qu'une fonction "classique". Elle possède deux syntaxes, une première -sans accolades- permettant d'être écrite sur une seule ligne ; et une seconde -avec accolades- qui est multiligne et requiert un <code>return</code>.</p>
+              <p>Une fonction fléchée a une syntaxe plus simple qu'une fonction "classique". Elle possède deux syntaxes,
+                une première -sans accolades- permettant d'être écrite sur une seule ligne ; et une seconde -avec
+                accolades- qui est multiligne et requiert un <code>return</code>.</p>
 
               <div class="row">
                 <p class="three columns">Exemple :</p>
@@ -792,7 +797,9 @@
               <pre><code id="funcFlechee">
               </code></pre>
 
-              <p>Le code ci-dessus revient à créer une fonction <code>addition</code> qui prend en paramètre <code>a</code> et <code>b</code> puis retourne le résultat de l'expression se trouvant à droite de la flèche (<code>=></code>).</p>
+              <p>Le code ci-dessus revient à créer une fonction <code>addition</code> qui prend en paramètre
+                <code>a</code> et <code>b</code> puis retourne le résultat de l'expression se trouvant à droite de la
+                flèche (<code>=></code>).</p>
 
               <div class="row">
                 <p class="three columns">Exemple :</p>
@@ -807,13 +814,12 @@
 
             </section>
 
-            </section>
-
             <!-- FONCTION ANONYME -->
             <section id="fonctionAnonyme">
 
               <h5>Les fonctions anonymes</h5>
-              <p>Une fonction anonyme ne possède pas de nom et s'auto-exécute dès qu'elle est définie. Elle est utilisée lorsque l'on sait que notre fonction ne sera pas réutilisée dans le code.</p>
+              <p>Une fonction anonyme ne possède pas de nom et s'auto-exécute dès qu'elle est définie. Elle est utilisée
+                lorsque l'on sait que notre fonction ne sera pas réutilisée dans le code.</p>
 
               <div class="row">
                 <p class="three columns">Exemple :</p>
@@ -826,7 +832,9 @@
               <pre><code id="funcAnonyme">
               </code></pre>
 
-              <p>Les parenthèses avant la flèche (<code>()</code>) signifie <code>function maFonction()</code>. Ce qui se trouve dans les accolades est notre bloc de code et les paranthèses à la fin correspondent aux paramètres.</p>
+              <p>Les parenthèses avant la flèche (<code>()</code>) signifie <code>function maFonction()</code>. Ce qui
+                se trouve dans les accolades est notre bloc de code et les paranthèses à la fin correspondent aux
+                paramètres.</p>
 
             </section>
 
@@ -836,95 +844,151 @@
 
         <!-- SOMMAIRE -->
         <div class="contents three columns">
-          <h5>Sommaire</h5>
+          <h4>Sommaire</h4>
 
-          <ul>
+          <!-- LES BASES -->
+          <details open>
 
-            <!-- OPERATEURS -->
-            <details open>
-              <summary>
-                <li><a href="#operateurs">Les opérateurs</a></li>
-              </summary>
-              <ul>
-                <li>
-                  <a href="#opeAffectation">Les opérateurs d'affectation</a>
-                </li>
-                <li>
-                  <a href="#opeComparaison">Les opérateurs de comparaison</a>
-                </li>
-                <li>
-                  <a href="#opeArithmetique">Les opérateurs arithmétiques</a>
-                </li>
-                <li>
-                  <a href="#opeLogiques">Les opérateurs logiques</a>
-                </li>
-                <li>
-                  <a href="#opeChainesCaracteres">Les opérateurs de chaînes de caractères</a>
-                </li>
-                <li>
-                  <a href="#opeTernaire">L'opérateur conditionnel ternaire</a>
-                </li>
-              </ul>
-            </details>
+            <summary>
+              <h5>
+                <li>Les bases</li>
+              </h5>
+            </summary>
 
-            <!-- VARIABLES -->
-            <details>
-              <summary>
-                <li><a href="#variables">Les variables</a></li>
-              </summary>
-              <ul>
-                <li>
-                  <a href="#varTest">La variable let</a>
-                </li>
-                <li>
-                  <a href="#varConst">La variable const</a>
-                </li>
-              </ul>
-            </details>
+            <ul>
 
-            <!-- TYPES DE DONNEES -->
-            <details>
-              <summary>
-                <li><a href="#dataType">Les types de données</a></li>
-              </summary>
-              <ul>
-                <li><a href="#dataTypeNumber">Le type number</a></li>
-                <li><a href="#dataTypeBoolean">Le type booléen</a></li>
-                <li><a href="#dataTypeString">Le type string</a></li>
-                <li><a href="#dataTypeNull">Le type null</a></li>
-                <li><a href="#dataTypeUndefined">Le type undefined</a></li>
-                <li><a href="#dataTypeTypeof">Opérateur Typeof</a></li>
-              </ul>
-            </details>
+              <!-- OPERATEURS -->
+              <details>
+                <summary>
+                  <li><a href="#operateurs">Les opérateurs</a></li>
+                </summary>
+                <ul>
+                  <li>
+                    <a href="#opeAffectation">Les opérateurs d'affectation</a>
+                  </li>
+                  <li>
+                    <a href="#opeComparaison">Les opérateurs de comparaison</a>
+                  </li>
+                  <li>
+                    <a href="#opeArithmetique">Les opérateurs arithmétiques</a>
+                  </li>
+                  <li>
+                    <a href="#opeLogiques">Les opérateurs logiques</a>
+                  </li>
+                  <li>
+                    <a href="#opeChainesCaracteres">Les opérateurs de chaînes de caractères</a>
+                  </li>
+                  <li>
+                    <a href="#opeTernaire">L'opérateur conditionnel ternaire</a>
+                  </li>
+                </ul>
+              </details>
 
-            <!-- STRUCTURES DE CONTROLE -->
-            <details>
-              <summary>
-                <li><a href="#structControle">Les structures de contrôle</a></li>
-              </summary>
-              <ul>
-                <li><a href="#structControleIfElse">If Else</a></li>
-                <li><a href="#structControleFor">For</a></li>
-                <li><a href="#structControleWhile">While</a></li>
-                <li><a href="#structControleBreak">Break</a></li>
-                <li><a href="#structControleContinu">Continue</a></li>
-                <li><a href="#structControleSwitch">Switch Case</a></li>
-              </ul>
-            </details>
+              <!-- VARIABLES -->
+              <details>
+                <summary>
+                  <li><a href="#variables">Les variables</a></li>
+                </summary>
+                <ul>
+                  <li>
+                    <a href="#varTest">La variable let</a>
+                  </li>
+                  <li>
+                    <a href="#varConst">La variable const</a>
+                  </li>
+                </ul>
+              </details>
 
-            <!-- FONCTIONS -->
-            <details>
-              <summary>
-                <li><a href="#fonctions">Les fonctions</a></li>
-              </summary>
-              <ul>
-                <li><a href="#fonctionSimple">Fonction simple</a></li>
-                <li><a href="#fonctionFlechee">Fonction fléchée</a></li>
-                <li><a href="#fonctionAnonyme">Fonction anonyme</a></li>
-              </ul>
-            </details>
+              <!-- TYPES DE DONNEES -->
+              <details>
+                <summary>
+                  <li><a href="#dataType">Les types de données</a></li>
+                </summary>
+                <ul>
+                  <li><a href="#dataTypeNumber">Le type number</a></li>
+                  <li><a href="#dataTypeBoolean">Le type booléen</a></li>
+                  <li><a href="#dataTypeString">Le type string</a></li>
+                  <li><a href="#dataTypeNull">Le type null</a></li>
+                  <li><a href="#dataTypeUndefined">Le type undefined</a></li>
+                  <li><a href="#dataTypeTypeof">Opérateur Typeof</a></li>
+                </ul>
+              </details>
 
-          </ul>
+              <!-- STRUCTURES DE CONTROLE -->
+              <details>
+                <summary>
+                  <li><a href="#structControle">Les structures de contrôle</a></li>
+                </summary>
+                <ul>
+                  <li><a href="#structControleIfElse">If Else</a></li>
+                  <li><a href="#structControleFor">For</a></li>
+                  <li><a href="#structControleWhile">While</a></li>
+                  <li><a href="#structControleBreak">Break</a></li>
+                  <li><a href="#structControleContinu">Continue</a></li>
+                  <li><a href="#structControleSwitch">Switch Case</a></li>
+                </ul>
+              </details>
+
+              <!-- FONCTIONS -->
+              <details>
+                <summary>
+                  <li><a href="#fonctions">Les fonctions</a></li>
+                </summary>
+                <ul>
+                  <li><a href="#fonctionSimple">Fonction simple</a></li>
+                  <li><a href="#fonctionFlechee">Fonction fléchée</a></li>
+                  <li><a href="#fonctionAnonyme">Fonction anonyme</a></li>
+                </ul>
+              </details>
+
+            </ul>
+
+          </details>
+
+          <!-- LES PROJETS -->
+          <details>
+
+            <summary>
+              <h5>
+                <li>Les projets</li>
+              </h5>
+            </summary>
+
+            <ul>
+
+              <!-- TP CALCULATRICE -->
+              <details>
+
+                <summary>
+                  <li><a href="#calculatrice">La calculatrice</a></li>
+                </summary>
+
+                <ul>
+                  <li><a href="#calculaticeEnonce">Enoncé</a></li>
+                  <li><a href="#calculaticeCorrection">Correction</a></li>
+                </ul>
+
+              </details>
+
+            </ul>
+
+          </details>
+
+          <!-- LES RESSOURCES -->
+          <details>
+
+            <summary>
+              <h5>
+                <li>Ressources</li>
+              </h5>
+            </summary>
+
+            <ul>
+              <li><a href="outils.html" target="_blank">Outils</a></li>
+            </ul>
+
+          </details>
+
         </div>
       </div>
     </main>
