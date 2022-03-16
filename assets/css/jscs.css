@@ -9,7 +9,7 @@ body {
   font-family: "Ubuntu";
 }
 
-h2, h3 {
+h2 {
   text-align: center;
 }
 
@@ -21,6 +21,12 @@ footer {
 
 a:link {
   text-decoration: none;
+}
+
+img {
+  width: 50%;
+  max-width: max-content;
+  max-height: auto;
 }
 
 /* TABLES */

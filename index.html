@@ -23,821 +23,852 @@
 
   <div class="container">
     <main>
-      <div class="row">
-        <h3>Bienvenue sur JS CheatSheet</h3>
-      </div>
 
       <div class="row">
         <div class="nine columns">
 
-          <!-- OPERATEURS -->
-          <article id="operateurs">
-            <h4>Les Opérateurs</h4>
+          <!-- LES BASES -->
+          <article>
 
-            <!-- OPERATEURS D'AFFECTATIONS -->
-            <section id="opeAffectation">
-              <h5>Opérateurs d'affectation</h5>
+            <h3>Les bases</h3>
 
-              <p>
-                Une affectation permet assigner une valeur à l'opérande
-                gauche. Quelques opérateurs d'affectation :
-              </p>
-
-              <table class="u-full-width">
-                <thead>
-                  <tr>
-                    <th>&nbsp;</th>
-                    <th>Opérateur</th>
-                    <th>Signification</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Affectation</td>
-                    <td>a = b</td>
-                    <td>a = b</td>
-                  </tr>
-                  <tr>
-                    <td>Affectation après addition</td>
-                    <td>a += b</td>
-                    <td>a = a + b</td>
-                  </tr>
-                  <tr>
-                    <td>Affectation après soustraction</td>
-                    <td>a -= b</td>
-                    <td>a = a - b</td>
-                  </tr>
-                  <tr>
-                    <td>Affectation après multiplication</td>
-                    <td>a *= b</td>
-                    <td>a = a * b</td>
-                  </tr>
-                  <tr>
-                    <td>Affectation après division</td>
-                    <td>a /= b</td>
-                    <td>a = a / b</td>
-                  </tr>
-                  <tr>
-                    <td>Affectation du reste</td>
-                    <td>a %= b</td>
-                    <td>a = a % b</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultOpeAffectation()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="operateurAffectation">
-                            </code></pre>
-            </section>
-
-            <!-- OPERATEURS DE COMPARAISONS -->
-            <section id="opeComparaison">
-              <h5>Opérateurs de comparaison</h5>
-              <p>
-                L'opérateur de comparaison compare deux opérandes et retourne
-                une valeur booléenne (vraie ou fausse).
-              </p>
-
-              <table class="u-full-width">
-                <thead>
-                  <tr>
-                    <th>&nbsp;</th>
-                    <th>Opérateur</th>
-                    <th>Exemple True</th>
-                    <th>Exemple False</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Egalité</td>
-                    <td>==</td>
-                    <td>1 == "1"</td>
-                    <td>1 == 2</td>
-                  </tr>
-                  <tr>
-                    <td>Inégalité</td>
-                    <td>!=</td>
-                    <td>1 != "2"</td>
-                    <td>3 != 3</td>
-                  </tr>
-                  <tr>
-                    <td>Supériorité stricte</td>
-                    <td>></td>
-                    <td>2 > 1</td>
-                    <td>1 > 1</td>
-                  </tr>
-                  <tr>
-                    <td>Supériorité ou égalité</td>
-                    <td>>=</td>
-                    <td>1 >= 1</td>
-                    <td>1 >= 2</td>
-                  </tr>
-                  <tr>
-                    <td>Infériorité stricte</td>
-                    <td><</td>
-                    </td>
-
-                    <td>1 < 3</td>
-                    <td>3 < 2</td>
-                  </tr>
-                  <tr>
-                    <td>Infériorité ou égalité</td>
-                    <td><=</td>
-                    </td>
-
-                    <td>1 <= 1</td>
-                    <td>2 <= 1</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <p>
-                Pour tester une <strong>égalité ou inégalité stricte</strong>,
-                il faut utiliser l'opérateur <code>===</code> (pour l'égalité
-                stricte) ou bien <code>!==</code> pour l'inégalité stricte.
-              </p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultOpeComparaison()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="operateurComparaison">
-                            </code></pre>
-            </section>
-
-            <!-- OPERATEURS ARITHMETIQUES -->
-            <section id="opeArithmetique">
-              <h5>Opérateurs arithmétiques</h5>
-              <p>
-                En plus des opérateurs arithmétiques "classiques", JavaScript
-                fournit d'autres opérateurs :
-              </p>
-
-              <table class="u-full-width">
-                <thead>
-                  <tr>
-                    <th>&nbsp;</th>
-                    <th>Opérateur</th>
-                    <th>Exemple #1</th>
-                    <th>Exemple #2</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Reste</td>
-                    <td>%</td>
-                    <td>42 % 4 retourne 2</td>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>Incrémentation</td>
-                    <td>++</td>
-                    <td>
-                      <code>i++</code> incrémente i de 1 et retourne la
-                      nouvelle valeur de i
-                    </td>
-                    <td>
-                      <code>++i</code> retourne la valeur de i puis incrémente
-                      i de 1
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Décrémentation</td>
-                    <td>--</td>
-                    <td>
-                      <code>i--</code> décrémente i de 1 et retourne la
-                      nouvelle valeur de i
-                    </td>
-                    <td>
-                      <code>--i</code> retourne la valeur de i puis décrémente
-                      i de 1
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Négation unaire</td>
-                    <td>-</td>
-                    <td>
-                      Si la variable <code>trois</code> vaut 3,
-                      <code>-trois</code> retourne <code>-3</code>
-                    </td>
-                    <td>
-                      Si la variable <code>trois</code> vaut -3,
-                      <code>-trois</code> retourne <code>3</code>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultOpeArithmetique()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="operateurArithmetique">
-                            </code></pre>
-            </section>
-
-            <!-- OPERATEURS LOGIQUES -->
-            <section id="opeLogiques">
-
-              <h5>Opérateurs Logiques</h5>
-              <p>
-                Les opérateurs logiques combinent des valeurs booléennes pour
-                retourner une nouvelle valeur booléenne. Dans le cas où les
-                valeurs ne peuvent pas retourner une valeur booléenne, une
-                valeur non-booléenne sera retournée.
-              </p>
-
-              <table class="u-full-width">
-                <thead>
-                  <tr>
-                    <th>&nbsp;</th>
-                    <th>Opérateur</th>
-                    <th>Exemple</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>ET logique</td>
-                    <td>&&</td>
-                    <td>expr1 <code>&&</code> expr2</td>
-                    <td>Retourne expr1 s'il peut retourner une valeur booléan, sinon renvoie expr2. Retourne
-                      <code>true</code> si les deux expressions valent true, sinon retourne <code>false</code>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>OU logique</td>
-                    <td>||</td>
-                    <td>expr1 <code>||</code> expr2</td>
-                    <td>Retourne expr1 s'il peut retourner <code>true</code>, sinon renvoie expr2. Retourne
-                      <code>true</code> si l'une des expressions vaut true, sinon retourne <code>false</code>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>NON logique</td>
-                    <td>!</td>
-                    <td><code>!</code>expr</td>
-                    <td>Retourne <code>false</code> si expr peut retourner true, sinon retourne <code>true</code></td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultOpeLogique()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="operateurLogique">
-                            </code></pre>
-
-            </section>
-
-            <!-- OPERATEURS DE CHAINES DE CARACTERES -->
-            <section id="opeChainesCaracteres">
-
-              <h5>Opérateurs de chaînes de caractères</h5>
-              <p>Il est possible de concaténer plusieurs chaînes de caractères comme ceci :</p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultOpeChaineCarac1()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="operateurChaineCaractere1">
-              </code></pre>
-
-              <p>Il est également possible de concaténer de cette manière :</p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultOpeChaineCarac2()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="operateurChaineCaractere2">
-              </code></pre>
-
-            </section>
-
-            <!-- OPERATEUR TERNAIRE -->
-            <section id="opeTernaire">
-
-              <h5>L'opérateur conditionnel ternaire</h5>
-              <p>Une ternaire est un façon courte d'écrire l'instruction <code>if else</code>.</p>
-              <p>Une ternaire se présente comme ceci : <code>(instruction) ? val1 : val2</code>.
-                <code>(instruction)</code> correspond à <code>if (instruction)</code>, le <code>?</code> se traduit par
-                <code>alors</code> et <code>:</code> par <code>sinon</code>.
-              </p>
-              <p>Voici un exemple de ternaire on reprenant le second exemple des opérateurs de chaînes de caractères.
-              </p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultOpeTernaire()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="operateurTernaire">
-              </code></pre>
-
-            </section>
+            <!-- OPERATEURS -->
+            <article id="operateurs">
+              <h4>Les Opérateurs</h4>
+  
+              <!-- OPERATEURS D'AFFECTATIONS -->
+              <section id="opeAffectation">
+                <h5>Opérateurs d'affectation</h5>
+  
+                <p>
+                  Une affectation permet assigner une valeur à l'opérande
+                  gauche. Quelques opérateurs d'affectation :
+                </p>
+  
+                <table class="u-full-width">
+                  <thead>
+                    <tr>
+                      <th>&nbsp;</th>
+                      <th>Opérateur</th>
+                      <th>Signification</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Affectation</td>
+                      <td>a = b</td>
+                      <td>a = b</td>
+                    </tr>
+                    <tr>
+                      <td>Affectation après addition</td>
+                      <td>a += b</td>
+                      <td>a = a + b</td>
+                    </tr>
+                    <tr>
+                      <td>Affectation après soustraction</td>
+                      <td>a -= b</td>
+                      <td>a = a - b</td>
+                    </tr>
+                    <tr>
+                      <td>Affectation après multiplication</td>
+                      <td>a *= b</td>
+                      <td>a = a * b</td>
+                    </tr>
+                    <tr>
+                      <td>Affectation après division</td>
+                      <td>a /= b</td>
+                      <td>a = a / b</td>
+                    </tr>
+                    <tr>
+                      <td>Affectation du reste</td>
+                      <td>a %= b</td>
+                      <td>a = a % b</td>
+                    </tr>
+                  </tbody>
+                </table>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultOpeAffectation()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="operateurAffectation">
+                              </code></pre>
+              </section>
+  
+              <!-- OPERATEURS DE COMPARAISONS -->
+              <section id="opeComparaison">
+                <h5>Opérateurs de comparaison</h5>
+                <p>
+                  L'opérateur de comparaison compare deux opérandes et retourne
+                  une valeur booléenne (vraie ou fausse).
+                </p>
+  
+                <table class="u-full-width">
+                  <thead>
+                    <tr>
+                      <th>&nbsp;</th>
+                      <th>Opérateur</th>
+                      <th>Exemple True</th>
+                      <th>Exemple False</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Egalité</td>
+                      <td>==</td>
+                      <td>1 == "1"</td>
+                      <td>1 == 2</td>
+                    </tr>
+                    <tr>
+                      <td>Inégalité</td>
+                      <td>!=</td>
+                      <td>1 != "2"</td>
+                      <td>3 != 3</td>
+                    </tr>
+                    <tr>
+                      <td>Supériorité stricte</td>
+                      <td>></td>
+                      <td>2 > 1</td>
+                      <td>1 > 1</td>
+                    </tr>
+                    <tr>
+                      <td>Supériorité ou égalité</td>
+                      <td>>=</td>
+                      <td>1 >= 1</td>
+                      <td>1 >= 2</td>
+                    </tr>
+                    <tr>
+                      <td>Infériorité stricte</td>
+                      <td><</td>
+                      </td>
+  
+                      <td>1 < 3</td>
+                      <td>3 < 2</td>
+                    </tr>
+                    <tr>
+                      <td>Infériorité ou égalité</td>
+                      <td><=</td>
+                      </td>
+  
+                      <td>1 <= 1</td>
+                      <td>2 <= 1</td>
+                    </tr>
+                  </tbody>
+                </table>
+  
+                <p>
+                  Pour tester une <strong>égalité ou inégalité stricte</strong>,
+                  il faut utiliser l'opérateur <code>===</code> (pour l'égalité
+                  stricte) ou bien <code>!==</code> pour l'inégalité stricte.
+                </p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultOpeComparaison()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="operateurComparaison">
+                              </code></pre>
+              </section>
+  
+              <!-- OPERATEURS ARITHMETIQUES -->
+              <section id="opeArithmetique">
+                <h5>Opérateurs arithmétiques</h5>
+                <p>
+                  En plus des opérateurs arithmétiques "classiques", JavaScript
+                  fournit d'autres opérateurs :
+                </p>
+  
+                <table class="u-full-width">
+                  <thead>
+                    <tr>
+                      <th>&nbsp;</th>
+                      <th>Opérateur</th>
+                      <th>Exemple #1</th>
+                      <th>Exemple #2</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Reste</td>
+                      <td>%</td>
+                      <td>42 % 4 retourne 2</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>Incrémentation</td>
+                      <td>++</td>
+                      <td>
+                        <code>i++</code> incrémente i de 1 et retourne la
+                        nouvelle valeur de i
+                      </td>
+                      <td>
+                        <code>++i</code> retourne la valeur de i puis incrémente
+                        i de 1
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Décrémentation</td>
+                      <td>--</td>
+                      <td>
+                        <code>i--</code> décrémente i de 1 et retourne la
+                        nouvelle valeur de i
+                      </td>
+                      <td>
+                        <code>--i</code> retourne la valeur de i puis décrémente
+                        i de 1
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Négation unaire</td>
+                      <td>-</td>
+                      <td>
+                        Si la variable <code>trois</code> vaut 3,
+                        <code>-trois</code> retourne <code>-3</code>
+                      </td>
+                      <td>
+                        Si la variable <code>trois</code> vaut -3,
+                        <code>-trois</code> retourne <code>3</code>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultOpeArithmetique()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="operateurArithmetique">
+                              </code></pre>
+              </section>
+  
+              <!-- OPERATEURS LOGIQUES -->
+              <section id="opeLogiques">
+  
+                <h5>Opérateurs Logiques</h5>
+                <p>
+                  Les opérateurs logiques combinent des valeurs booléennes pour
+                  retourner une nouvelle valeur booléenne. Dans le cas où les
+                  valeurs ne peuvent pas retourner une valeur booléenne, une
+                  valeur non-booléenne sera retournée.
+                </p>
+  
+                <table class="u-full-width">
+                  <thead>
+                    <tr>
+                      <th>&nbsp;</th>
+                      <th>Opérateur</th>
+                      <th>Exemple</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>ET logique</td>
+                      <td>&&</td>
+                      <td>expr1 <code>&&</code> expr2</td>
+                      <td>Retourne expr1 s'il peut retourner une valeur booléan, sinon renvoie expr2. Retourne
+                        <code>true</code> si les deux expressions valent true, sinon retourne <code>false</code>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>OU logique</td>
+                      <td>||</td>
+                      <td>expr1 <code>||</code> expr2</td>
+                      <td>Retourne expr1 s'il peut retourner <code>true</code>, sinon renvoie expr2. Retourne
+                        <code>true</code> si l'une des expressions vaut true, sinon retourne <code>false</code>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>NON logique</td>
+                      <td>!</td>
+                      <td><code>!</code>expr</td>
+                      <td>Retourne <code>false</code> si expr peut retourner true, sinon retourne <code>true</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultOpeLogique()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="operateurLogique">
+                              </code></pre>
+  
+              </section>
+  
+              <!-- OPERATEURS DE CHAINES DE CARACTERES -->
+              <section id="opeChainesCaracteres">
+  
+                <h5>Opérateurs de chaînes de caractères</h5>
+                <p>Il est possible de concaténer plusieurs chaînes de caractères comme ceci :</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultOpeChaineCarac1()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="operateurChaineCaractere1">
+                </code></pre>
+  
+                <p>Il est également possible de concaténer de cette manière :</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultOpeChaineCarac2()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="operateurChaineCaractere2">
+                </code></pre>
+  
+              </section>
+  
+              <!-- OPERATEUR TERNAIRE -->
+              <section id="opeTernaire">
+  
+                <h5>L'opérateur conditionnel ternaire</h5>
+                <p>Une ternaire est un façon courte d'écrire l'instruction <code>if else</code>.</p>
+                <p>Une ternaire se présente comme ceci : <code>(instruction) ? val1 : val2</code>.
+                  <code>(instruction)</code> correspond à <code>if (instruction)</code>, le <code>?</code> se traduit par
+                  <code>alors</code> et <code>:</code> par <code>sinon</code>.
+                </p>
+                <p>Voici un exemple de ternaire on reprenant le second exemple des opérateurs de chaînes de caractères.
+                </p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultOpeTernaire()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="operateurTernaire">
+                </code></pre>
+  
+              </section>
+  
+            </article>
+  
+            <!-- VARIABLES -->
+            <article id="variables">
+  
+              <h4>Les variables</h4>
+  
+              <!-- VARIABLE LET -->
+              <section id="varLet">
+  
+                <h5>La variable let</h5>
+                <p>La variable <code>let</code> a une portée restreinte au bloc où elle est déclarée. Il est également
+                  possible de déclarer une variable avec let sans attribuer de valeur.</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultVarLet()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="variableLet">
+                </code></pre>
+  
+                <p>Ici, c'est "Hello There" qui est retourné bien que la variable <code>hello</code> soit redéfinie après
+                  avec "Hello World" car la redéclaration de la variable se trouve dans un autre bloc (symbolisé avec
+                  <code>{}</code>).<br>Si le return aurait été effectué dans le bloc après la redéclaration de la
+                  variable, "Hello World" aurait été retourné. Cependant, si le return est effectué avant la redéclaration
+                  dans le bloc, une erreur se serait produite.
+                </p>
+                <p>Il n'est pas possible de redéclarer une variable dans un même bloc.</p>
+  
+              </section>
+  
+              <!-- VARIABLE CONST -->
+              <section id="varConst">
+  
+                <h5>La variable const</h5>
+                <p>Tout comme let, <code>const</code> à une portée restreinte au bloc où elle est déclarée. Il faut
+                  cependant obligatoirement affecter une valeur à sa déclaration.<br>Il n'est pas possible de réaffecter
+                  une constante ou bien de modifier sa valeur.</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultVarConst()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="variableConst">
+                </code></pre>
+  
+              </section>
+  
+            </article>
+  
+            <!-- TYPES DE DONNEES -->
+            <article id="dataType">
+  
+              <h4>Les types de données</h4>
+  
+              <!-- TYPE NUMBER -->
+              <section id="dataTypeNumber">
+  
+                <h5>Le type number</h5>
+                <p>Le type number représente les nombres. Il regroupe aussi bien les entiers que des décimales.</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultDatatNumber()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="datatNumber">
+                </code></pre>
+  
+              </section>
+  
+              <!-- TYPE BOOLEEN -->
+              <section id="dataTypeBoolean">
+  
+                <h5>Le type booléen</h5>
+                <p>Le type booléan est soit vrai (<code>true</code>) ou faux (<code>false</code>).</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultDatatBool()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="datatBool">
+                </code></pre>
+  
+              </section>
+  
+              <!-- TYPE STRING -->
+              <section id="dataTypeString">
+  
+                <h5>Le type string</h5>
+                <p>Le type string est une suite de caractères. Elle se trouve le plus souvent dans des apostrophes doubles
+                  mais il existe plusieurs façon de la représenter.</p>
+                <li>
+                  Double apostrophes : <code>let chaine = "ma chaine de caractères";</code>
+                </li>
+                <li>
+                  Apostrophes simples : <code>let chaine = 'C\'est une chaine de caractères';</code>
+                </li>
+                <p>En utilisant les apostrophes simples, si un ou plusieurs mots utilise une apostrophe il faut veiller à
+                  "échapper" les caractères avec un <code>\</code>. Sinon, ce sera interprété comme ceci :
+                  <code>let chaine = 'C'</code> et produira une erreur ne sachant pas interprêter la suite.
+                </p>
+                <li>
+                  Barres verticales (pipe en anglais) : <code>let chaine = `ma chaine`;</code>
+                </li>
+                <p>En utilisant les barres verticales, il faudra utiliser <code>${}</code> pour utiliser une variable.</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultDatatString()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="datatString">
+                </code></pre>
+  
+              </section>
+  
+              <!-- TYPE NULL -->
+              <section id="dataTypeNull">
+  
+                <h5>Le type null</h5>
+                <p>Le type null permet de définir une variable sans qu'elle n'ai de réel valeur car elle vaudra
+                  <code>null</code>.
+                </p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultDatatNull()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="datatNull">
+                </code></pre>
+  
+              </section>
+  
+              <!-- TYPE UNDEFINED -->
+              <section id="dataTypeUndefined">
+  
+                <h5>Le type undefined</h5>
+                <p>Le type undefined signifie que la variable n'a pas été définie.</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultDatatUndefined()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="datatUndefined">
+                </code></pre>
+  
+              </section>
+  
+              <!-- TYPE TYPEOF -->
+              <section id="dataTypeTypeof">
+  
+                <h5>L'Opérateur Typeof</h5>
+                <p>L'opérateur <code>Typeof</code> retourne une chaîne indiquant le type.</p>
+  
+                <table class="u-full-width">
+                  <thead>
+                    <tr>
+                      <th>&nbsp;</th>
+                      <th>Résultat</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>typeof 'chaine'</td>
+                      <td>String</td>
+                    </tr>
+                    <tr>
+                      <td>typeof 42</td>
+                      <td>number</td>
+                    </tr>
+                    <tr>
+                      <td>typeof true</td>
+                      <td>boolean</td>
+                    </tr>
+                    <tr>
+                      <td><code>typeof maVariable</code> ou <code>typeof maVariable()</code></td>
+                      <td>undefined</td>
+                    </tr>
+                  </tbody>
+                </table>
+  
+                <p>Si la variable est définie, <code>typeof</code> retournera le type et non <code>undefined</code>. Si la
+                  fonction ne retourne rien, <code>undefined</code> est retourné ; sinon <code>typeof</code> retournera le
+                  type.</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultDatatTypeof()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="datatTypeof">
+                </code></pre>
+  
+              </section>
+  
+            </article>
+  
+            <!-- STRUCTURES DE CONTROLE -->
+            <article id="structControle">
+  
+              <h4>Les Structures de contrôle</h4>
+  
+              <!-- STRUCTURE IF ELSE -->
+              <section id="structControleIfElse">
+  
+                <h5>La structure if else</h5>
+                <p>
+                  <code>If Else</code> permet de vérifier si une condition est vraie ( <code>true</code> ). Si la
+                  condition est vraie, le code se trouvant dans le <code>if</code> sera exécuté ; si elle est fausse, le
+                  code se trouvant dans le <code>else</code> sera exécuté.
+                </p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultStControleIf()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="stControleIf">
+                </code></pre>
+  
+              </section>
+  
+              <!-- STRUCTURE FOR -->
+              <section id="structControleFor">
+  
+                <h5>La structure for</h5>
+                <p>
+                  La boucle <code>for</code> permet d'exécuter un bloc plusieurs fois. Pour que la boucle puisse
+                  s'arrêter, il faut utiliser un compteur. Lors de la déclaration de la boucle, il faut donc indiquer :
+                  <li>Une valeur initiale</li>
+                  <li>Une valeur finale</li>
+                  <li>Un pas</li>
+                  La boucle partira de la valeur initiale et s'incrémentera du pas jusqu'à la valeur finale où la boucle
+                  prendra fin.
+                </p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultStControleFor()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="stControleFor">
+                </code></pre>
+  
+              </section>
+  
+              <!-- STRUCTURE WHILE -->
+              <section id="structControleWhile">
+  
+                <h5>La structure while</h5>
+                <p>
+                  La boucle while se traduit par "<i>tant que la condition est vraie</i>". La boucle s'exécutera donc
+                  jusqu'à ce que la condition soit complétée.
+                </p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultStControleWhile()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="stControleWhile">
+                </code></pre>
+  
+              </section>
+  
+              <!-- STRUCTURE BREAK -->
+              <section id="structControleBreak">
+  
+                <h5>La structure break</h5>
+                <p>
+                  L'instruction <code>break</code> permet de sortir d'une boucle ( <code>for</code> ou <code>while</code>
+                  ).
+                </p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultStControleBreak()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="stControleBreak">
+                </code></pre>
+  
+              </section>
+  
+              <!-- STRUCTURE CONTINUE -->
+              <section id="structControleContinue">
+  
+                <h5>La structure continue</h5>
+                <p>
+                  L'instruction <code>continue</code> permet d'ignorer l'itération en cours.
+                </p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultStControleContinue()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="stControleContinue">
+                </code></pre>
+  
+              </section>
+  
+              <!-- STRUCTURE SWITCH CASE -->
+              <section id="structControleSwitch">
+  
+                <h5>La structure switch case</h5>
+                <p>
+                  La structure <code>switch case</code> permet d'exécuter le cas correspondant à l'expression.
+                </p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultStControleSwitch()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="stControleSwitch">
+                </code></pre>
+  
+              </section>
+  
+            </article>
+  
+            <!-- LES FONCTIONS -->
+            <article id="fonctions">
+  
+              <h4>Les fonctions</h4>
+  
+              <!-- FONCTION SIMPLE -->
+              <section id="fonctionSimple">
+  
+                <h5>Les fonctions simples</h5>
+                <p>Une fonction est un bloc de code portant un nom et est réutilisable. Elle permet d'effectuer une tâche
+                  précise. Il est possible de passer un ou plusieurs paramètres lorsqu'elle est définie.</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultFuncSimple()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="funcSimple">
+                </code></pre>
+  
+                <p>Une fonction doit toujours être déclarée avant d'être appelée. Une variable déclarée à l'intérieur
+                  d'une fonction n'est pas accessible à l'extérieur. De la même façon, la valeur d'une variable redéclarée
+                  à l'intérieur primera sur la valeur passée en paramètre.</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultFuncSimpleSuite()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="funcSimpleSuite">
+                </code></pre>
+  
+              </section>
+  
+              <!-- FONCTION FLECHEE -->
+              <section id="fonctionFlechee">
+  
+                <h5>Les fonctions fléchées</h5>
+                <p>Une fonction fléchée a une syntaxe plus simple qu'une fonction "classique". Elle possède deux syntaxes,
+                  une première -sans accolades- permettant d'être écrite sur une seule ligne ; et une seconde -avec
+                  accolades- qui est multiligne et requiert un <code>return</code>.</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultFuncFlechee()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="funcFlechee">
+                </code></pre>
+  
+                <p>Le code ci-dessus revient à créer une fonction <code>addition</code> qui prend en paramètre
+                  <code>a</code> et <code>b</code> puis retourne le résultat de l'expression se trouvant à droite de la
+                  flèche (<code>=></code>).</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultFuncFlecheeMulti()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="funcFlecheeMulti">
+                </code></pre>
+  
+              </section>
+  
+              <!-- FONCTION ANONYME -->
+              <section id="fonctionAnonyme">
+  
+                <h5>Les fonctions anonymes</h5>
+                <p>Une fonction anonyme ne possède pas de nom et s'auto-exécute dès qu'elle est définie. Elle est utilisée
+                  lorsque l'on sait que notre fonction ne sera pas réutilisée dans le code.</p>
+  
+                <div class="row">
+                  <p class="three columns">Exemple :</p>
+                  <span class="six columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultFuncAnonyme()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="funcAnonyme">
+                </code></pre>
+  
+                <p>Les parenthèses avant la flèche (<code>()</code>) signifie <code>function maFonction()</code>. Ce qui
+                  se trouve dans les accolades est notre bloc de code et les paranthèses à la fin correspondent aux
+                  paramètres.</p>
+  
+              </section>
+  
+            </article>
 
           </article>
 
-          <!-- VARIABLES -->
-          <article id="variables">
+          <!-- LE DOM -->
+          <article>
 
-            <h4>Les variables</h4>
+            <h3>Le DOM</h3>
 
-            <!-- VARIABLE LET -->
-            <section id="varLet">
+            <!-- DOM HTML -->
+            <article id="domHTML">
+  
+              <h4>Le DOM HTML</h4>
 
-              <h5>La variable let</h5>
-              <p>La variable <code>let</code> a une portée restreinte au bloc où elle est déclarée. Il est également
-                possible de déclarer une variable avec let sans attribuer de valeur.</p>
+              <p>Qu'est-ce que le DOM ? Le DOM (Document Object Model) est une représentation du document HTML. C'est une conversion de la structure et de son contenu en un modèle objet.</p>
+              <p>Le DOM -pour qu'il soit valide- doit obligatoirement avoir l'élément parent <code>HTML</code> ainsi que ses deux éléments enfants <code>head</code> et <code>body</code>. Cependant, lors du processus de création du DOM, le navigateur corrigera les informations invalides ou manquantes.<br>
+              Il existe un autre élément qui est obligatoire : <code>tbody</code> lors de l'utilisation d'un tableau. Il n'est pas un élément obligatoire en HTML mais s'il est absent lors de la génération du DOM, il sera ajouté dans le DOM.</p>
+            
+              <img src="/assets/images/dom-model.png" alt="treedom">
+  
+            </article>
 
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultVarLet()">
-                  Résultat
-                </button>
-              </div>
+            <article id="selecteurs">
 
-              <pre><code id="variableLet">
-              </code></pre>
+              <h4>Les sélecteurs</h4>
 
-              <p>Ici, c'est "Hello There" qui est retourné bien que la variable <code>hello</code> soit redéfinie après
-                avec "Hello World" car la redéclaration de la variable se trouve dans un autre bloc (symbolisé avec
-                <code>{}</code>).<br>Si le return aurait été effectué dans le bloc après la redéclaration de la
-                variable, "Hello World" aurait été retourné. Cependant, si le return est effectué avant la redéclaration
-                dans le bloc, une erreur se serait produite.
-              </p>
-              <p>Il n'est pas possible de redéclarer une variable dans un même bloc.</p>
-
-            </section>
-
-            <!-- VARIABLE CONST -->
-            <section id="varConst">
-
-              <h5>La variable const</h5>
-              <p>Tout comme let, <code>const</code> à une portée restreinte au bloc où elle est déclarée. Il faut
-                cependant obligatoirement affecter une valeur à sa déclaration.<br>Il n'est pas possible de réaffecter
-                une constante ou bien de modifier sa valeur.</p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultVarConst()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="variableConst">
-              </code></pre>
-
-            </section>
+            </article>
 
           </article>
 
-          <!-- TYPES DE DONNEES -->
-          <article id="dataType">
-
-            <h4>Les types de données</h4>
-
-            <!-- TYPE NUMBER -->
-            <section id="dataTypeNumber">
-
-              <h5>Le type number</h5>
-              <p>Le type number représente les nombres. Il regroupe aussi bien les entiers que des décimales.</p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultDatatNumber()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="datatNumber">
-              </code></pre>
-
-            </section>
-
-            <!-- TYPE BOOLEEN -->
-            <section id="dataTypeBoolean">
-
-              <h5>Le type booléen</h5>
-              <p>Le type booléan est soit vrai (<code>true</code>) ou faux (<code>false</code>).</p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultDatatBool()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="datatBool">
-              </code></pre>
-
-            </section>
-
-            <!-- TYPE STRING -->
-            <section id="dataTypeString">
-
-              <h5>Le type string</h5>
-              <p>Le type string est une suite de caractères. Elle se trouve le plus souvent dans des apostrophes doubles
-                mais il existe plusieurs façon de la représenter.</p>
-              <li>
-                Double apostrophes : <code>let chaine = "ma chaine de caractères";</code>
-              </li>
-              <li>
-                Apostrophes simples : <code>let chaine = 'C\'est une chaine de caractères';</code>
-              </li>
-              <p>En utilisant les apostrophes simples, si un ou plusieurs mots utilise une apostrophe il faut veiller à
-                "échapper" les caractères avec un <code>\</code>. Sinon, ce sera interprété comme ceci :
-                <code>let chaine = 'C'</code> et produira une erreur ne sachant pas interprêter la suite.
-              </p>
-              <li>
-                Barres verticales (pipe en anglais) : <code>let chaine = `ma chaine`;</code>
-              </li>
-              <p>En utilisant les barres verticales, il faudra utiliser <code>${}</code> pour utiliser une variable.</p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultDatatString()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="datatString">
-              </code></pre>
-
-            </section>
-
-            <!-- TYPE NULL -->
-            <section id="dataTypeNull">
-
-              <h5>Le type null</h5>
-              <p>Le type null permet de définir une variable sans qu'elle n'ai de réel valeur car elle vaudra
-                <code>null</code>.
-              </p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultDatatNull()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="datatNull">
-              </code></pre>
-
-            </section>
-
-            <!-- TYPE UNDEFINED -->
-            <section id="dataTypeUndefined">
-
-              <h5>Le type undefined</h5>
-              <p>Le type undefined signifie que la variable n'a pas été définie.</p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultDatatUndefined()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="datatUndefined">
-              </code></pre>
-
-            </section>
-
-            <!-- TYPE TYPEOF -->
-            <section id="dataTypeTypeof">
-
-              <h5>L'Opérateur Typeof</h5>
-              <p>L'opérateur <code>Typeof</code> retourne une chaîne indiquant le type.</p>
-
-              <table class="u-full-width">
-                <thead>
-                  <tr>
-                    <th>&nbsp;</th>
-                    <th>Résultat</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>typeof 'chaine'</td>
-                    <td>String</td>
-                  </tr>
-                  <tr>
-                    <td>typeof 42</td>
-                    <td>number</td>
-                  </tr>
-                  <tr>
-                    <td>typeof true</td>
-                    <td>boolean</td>
-                  </tr>
-                  <tr>
-                    <td><code>typeof maVariable</code> ou <code>typeof maVariable()</code></td>
-                    <td>undefined</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <p>Si la variable est définie, <code>typeof</code> retournera le type et non <code>undefined</code>. Si la
-                fonction ne retourne rien, <code>undefined</code> est retourné ; sinon <code>typeof</code> retournera le
-                type.</p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultDatatTypeof()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="datatTypeof">
-              </code></pre>
-
-            </section>
-
-          </article>
-
-          <!-- STRUCTURES DE CONTROLE -->
-          <article id="structControle">
-
-            <h4>Les Structures de contrôle</h4>
-
-            <!-- STRUCTURE IF ELSE -->
-            <section id="structControleIfElse">
-
-              <h5>La structure if else</h5>
-              <p>
-                <code>If Else</code> permet de vérifier si une condition est vraie ( <code>true</code> ). Si la
-                condition est vraie, le code se trouvant dans le <code>if</code> sera exécuté ; si elle est fausse, le
-                code se trouvant dans le <code>else</code> sera exécuté.
-              </p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultStControleIf()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="stControleIf">
-              </code></pre>
-
-            </section>
-
-            <!-- STRUCTURE FOR -->
-            <section id="structControleFor">
-
-              <h5>La structure for</h5>
-              <p>
-                La boucle <code>for</code> permet d'exécuter un bloc plusieurs fois. Pour que la boucle puisse
-                s'arrêter, il faut utiliser un compteur. Lors de la déclaration de la boucle, il faut donc indiquer :
-                <li>Une valeur initiale</li>
-                <li>Une valeur finale</li>
-                <li>Un pas</li>
-                La boucle partira de la valeur initiale et s'incrémentera du pas jusqu'à la valeur finale où la boucle
-                prendra fin.
-              </p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultStControleFor()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="stControleFor">
-              </code></pre>
-
-            </section>
-
-            <!-- STRUCTURE WHILE -->
-            <section id="structControleWhile">
-
-              <h5>La structure while</h5>
-              <p>
-                La boucle while se traduit par "<i>tant que la condition est vraie</i>". La boucle s'exécutera donc
-                jusqu'à ce que la condition soit complétée.
-              </p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultStControleWhile()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="stControleWhile">
-              </code></pre>
-
-            </section>
-
-            <!-- STRUCTURE BREAK -->
-            <section id="structControleBreak">
-
-              <h5>La structure break</h5>
-              <p>
-                L'instruction <code>break</code> permet de sortir d'une boucle ( <code>for</code> ou <code>while</code>
-                ).
-              </p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultStControleBreak()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="stControleBreak">
-              </code></pre>
-
-            </section>
-
-            <!-- STRUCTURE CONTINUE -->
-            <section id="structControleContinue">
-
-              <h5>La structure continue</h5>
-              <p>
-                L'instruction <code>continue</code> permet d'ignorer l'itération en cours.
-              </p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultStControleContinue()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="stControleContinue">
-              </code></pre>
-
-            </section>
-
-            <!-- STRUCTURE SWITCH CASE -->
-            <section id="structControleSwitch">
-
-              <h5>La structure switch case</h5>
-              <p>
-                La structure <code>switch case</code> permet d'exécuter le cas correspondant à l'expression.
-              </p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultStControleSwitch()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="stControleSwitch">
-              </code></pre>
-
-            </section>
-
-          </article>
-
-          <!-- LES FONCTIONS -->
-          <article id="fonctions">
-
-            <h4>Les fonctions</h4>
-
-            <!-- FONCTION SIMPLE -->
-            <section id="fonctionSimple">
-
-              <h5>Les fonctions simples</h5>
-              <p>Une fonction est un bloc de code portant un nom et est réutilisable. Elle permet d'effectuer une tâche
-                précise. Il est possible de passer un ou plusieurs paramètres lorsqu'elle est définie.</p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultFuncSimple()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="funcSimple">
-              </code></pre>
-
-              <p>Une fonction doit toujours être déclarée avant d'être appelée. Une variable déclarée à l'intérieur
-                d'une fonction n'est pas accessible à l'extérieur. De la même façon, la valeur d'une variable redéclarée
-                à l'intérieur primera sur la valeur passée en paramètre.</p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultFuncSimpleSuite()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="funcSimpleSuite">
-              </code></pre>
-
-            </section>
-
-            <!-- FONCTION FLECHEE -->
-            <section id="fonctionFlechee">
-
-              <h5>Les fonctions fléchées</h5>
-              <p>Une fonction fléchée a une syntaxe plus simple qu'une fonction "classique". Elle possède deux syntaxes,
-                une première -sans accolades- permettant d'être écrite sur une seule ligne ; et une seconde -avec
-                accolades- qui est multiligne et requiert un <code>return</code>.</p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultFuncFlechee()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="funcFlechee">
-              </code></pre>
-
-              <p>Le code ci-dessus revient à créer une fonction <code>addition</code> qui prend en paramètre
-                <code>a</code> et <code>b</code> puis retourne le résultat de l'expression se trouvant à droite de la
-                flèche (<code>=></code>).</p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultFuncFlecheeMulti()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="funcFlecheeMulti">
-              </code></pre>
-
-            </section>
-
-            <!-- FONCTION ANONYME -->
-            <section id="fonctionAnonyme">
-
-              <h5>Les fonctions anonymes</h5>
-              <p>Une fonction anonyme ne possède pas de nom et s'auto-exécute dès qu'elle est définie. Elle est utilisée
-                lorsque l'on sait que notre fonction ne sera pas réutilisée dans le code.</p>
-
-              <div class="row">
-                <p class="three columns">Exemple :</p>
-                <span class="six columns">&nbsp</span>
-                <button class="three columns" type="button" onclick="resultFuncAnonyme()">
-                  Résultat
-                </button>
-              </div>
-
-              <pre><code id="funcAnonyme">
-              </code></pre>
-
-              <p>Les parenthèses avant la flèche (<code>()</code>) signifie <code>function maFonction()</code>. Ce qui
-                se trouve dans les accolades est notre bloc de code et les paranthèses à la fin correspondent aux
-                paramètres.</p>
-
-            </section>
-
-          </article>
 
         </div>
 
@@ -943,6 +974,38 @@
             </ul>
 
           </details>
+
+          <!-- LE DOM -->
+          <details>
+
+            <summary>
+              <h5>
+                <li>Le DOM</li>
+              </h5>
+            </summary>
+
+            <ul>
+              <!-- DOM HTML -->
+              <li><a href="#domHTML">Le DOM HTML</a></li>
+
+              <details>
+                <summary>
+                  <li><a href="#selecteurs">Les sélecteurs</a></li>
+                </summary>
+
+                <ul>
+                  <li><a href="#selectById">Sélecteur byId</a></li>
+                  <li><a href="#selectByTagName">Sélecteur byTagName</a></li>
+                  <li><a href="#selectByName">Sélecteur byName</a></li>
+                  <li><a href="#selectByClassName">Sélecteur byClassName</a></li>
+                  <li><a href="#selectQueries">Sélecteur CSS</a></li>
+                </ul>
+
+              </details>
+
+            </ul>
+
+          </details>          
 
           <!-- LES PROJETS -->
           <details>
