@@ -861,9 +861,74 @@
   
             </article>
 
+            <!-- LES SELECTEURS -->
             <article id="selecteurs">
 
               <h4>Les sélecteurs</h4>
+
+              <!-- GET BY ID -->
+              <section id="selectById">
+
+                <h5>Le sélecteur getElementById</h5>
+                <p><code>getElementById</code> est une méthode de l'interface <code>document</code> qui représente la page web chargée dans le navigateur.<br>
+                Cette méthode permet de sélectionner un élément dont la propriété <code>id</code> correspond.</p>
+                <p>L'exemple ci-dessous permet de changer la couleur de fond de l'élément dont la propriété <code>id</code> est <code>btnSelectById</code>.</p>
+
+                <div class="row">
+                  <span class="nine columns">&nbsp</span>
+                  <button class="three columns" type="button" id="btnSelectById" onclick="resultSelectById()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="selecteurById">
+                              </code></pre>
+
+              </section>
+
+              <!-- GET BY TAG NAME -->
+              <section id="selectByTagName">
+
+                <h5>Le sélecteur getElementsByTagName</h5>
+                <p>La méthode <code>getElementsByTagName</code> permet de retourner une liste d'éléments portant le nom de la balise spécifié.</p>
+
+                <div class="row">
+                  <span class="nine columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultSelectByTagName()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="selecteurByTagName">
+                              </code></pre>
+
+              </section>
+
+              <!-- GET BY NAME -->
+              <section id="selectByName">
+
+                <h5>Le sélecteur getElementsByName</h5>
+                <p>La méthode <code>getElementsByName</code> retourne une liste d'éléments dont l'attribut name correspond à ce qui est spécifié.</p>
+
+                <div class="row">
+                  <span class="nine columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultSelectByName()">
+                    Résultat
+                  </button>
+                </div>
+  
+                <pre><code id="selecteurByName">
+                              </code></pre>
+
+              </section>
+
+              <!-- GET BY CLASS NAME -->
+              <section id="selectByClassName">
+
+                <h5>Le sélecteur getElementsByClassName</h5>
+                <p></p>
+
+              </section>
 
             </article>
 
@@ -1052,40 +1117,45 @@
   </footer>
 
   <!-- SCRIPTS OPERATEURS -->
-  <script src="/assets/js/operateurs/operateurAffectation.js"></script>
-  <script src="/assets/js/operateurs/operateurComparaison.js"></script>
-  <script src="/assets/js/operateurs/operateurArithmetique.js"></script>
-  <script src="/assets/js/operateurs/operateurLogique.js"></script>
-  <script src="/assets/js/operateurs/operateurChaineCaractere1.js"></script>
-  <script src="/assets/js/operateurs/operateurChaineCaractere2.js"></script>
-  <script src="/assets/js/operateurs/operateurTernaire.js"></script>
+  <script src="/assets/js/bases/operateurs/operateurAffectation.js"></script>
+  <script src="/assets/js/bases/operateurs/operateurComparaison.js"></script>
+  <script src="/assets/js/bases/operateurs/operateurArithmetique.js"></script>
+  <script src="/assets/js/bases/operateurs/operateurLogique.js"></script>
+  <script src="/assets/js/bases/operateurs/operateurChaineCaractere1.js"></script>
+  <script src="/assets/js/bases/operateurs/operateurChaineCaractere2.js"></script>
+  <script src="/assets/js/bases/operateurs/operateurTernaire.js"></script>
 
   <!-- SCRIPTS VARIABLES -->
-  <script src="/assets/js/variables/variableLet.js"></script>
-  <script src="/assets/js/variables/variableConst.js"></script>
+  <script src="/assets/js/bases/variables/variableLet.js"></script>
+  <script src="/assets/js/bases/variables/variableConst.js"></script>
 
   <!-- SCRIPTS TYPES DE DONNEES -->
-  <script src="/assets/js/datatypes/dataTypeNumber.js"></script>
-  <script src="/assets/js/datatypes/dataTypeBoolean.js"></script>
-  <script src="/assets/js/datatypes/dataTypeString.js"></script>
-  <script src="/assets/js/datatypes/dataTypeNull.js"></script>
-  <script src="/assets/js/datatypes/dataTypeUndefined.js"></script>
-  <script src="/assets/js/datatypes/dataTypeTypeof.js"></script>
+  <script src="/assets/js/bases/datatypes/dataTypeNumber.js"></script>
+  <script src="/assets/js/bases/datatypes/dataTypeBoolean.js"></script>
+  <script src="/assets/js/bases/datatypes/dataTypeString.js"></script>
+  <script src="/assets/js/bases/datatypes/dataTypeNull.js"></script>
+  <script src="/assets/js/bases/datatypes/dataTypeUndefined.js"></script>
+  <script src="/assets/js/bases/datatypes/dataTypeTypeof.js"></script>
 
   <!-- SCRIPTS STRUCTURES DE CONTROLE -->
-  <script src="/assets/js/structuresControle/structureControleIfElse.js"></script>
-  <script src="/assets/js/structuresControle/structureControleFor.js"></script>
-  <script src="/assets/js/structuresControle/structureControleWhile.js"></script>
-  <script src="/assets/js/structuresControle/structureControleBreak.js"></script>
-  <script src="/assets/js/structuresControle/structureControleContinue.js"></script>
-  <script src="/assets/js/structuresControle/structureControleSwitchCase.js"></script>
+  <script src="/assets/js/bases/structuresControle/structureControleIfElse.js"></script>
+  <script src="/assets/js/bases/structuresControle/structureControleFor.js"></script>
+  <script src="/assets/js/bases/structuresControle/structureControleWhile.js"></script>
+  <script src="/assets/js/bases/structuresControle/structureControleBreak.js"></script>
+  <script src="/assets/js/bases/structuresControle/structureControleContinue.js"></script>
+  <script src="/assets/js/bases/structuresControle/structureControleSwitchCase.js"></script>
 
   <!-- SCRIPTS FONCTIONS -->
-  <script src="/assets/js/fonctions/fonctionSimple.js"></script>
-  <script src="/assets/js/fonctions/fonctionSimpleSuite.js"></script>
-  <script src="/assets/js/fonctions/fonctionFlechee.js"></script>
-  <script src="/assets/js/fonctions/fonctionFlecheeMulti.js"></script>
-  <script src="/assets/js/fonctions/fonctionAnonyme.js"></script>
+  <script src="/assets/js/bases/fonctions/fonctionSimple.js"></script>
+  <script src="/assets/js/bases/fonctions/fonctionSimpleSuite.js"></script>
+  <script src="/assets/js/bases/fonctions/fonctionFlechee.js"></script>
+  <script src="/assets/js/bases/fonctions/fonctionFlecheeMulti.js"></script>
+  <script src="/assets/js/bases/fonctions/fonctionAnonyme.js"></script>
+
+  <!-- SCRIPTS SELECTEURS -->
+  <script src="/assets/js/dom/selecteurs/selecteurGetElementById.js"></script>
+  <script src="/assets/js/dom/selecteurs/selecteurGetElementsByTagName.js"></script>
+  <script src="/assets/js/dom/selecteurs/selecteurGetElementsByName.js"></script>
 
 </body>
 
