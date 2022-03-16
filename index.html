@@ -926,7 +926,48 @@
               <section id="selectByClassName">
 
                 <h5>Le sélecteur getElementsByClassName</h5>
-                <p></p>
+                <p>La méthode <code>getElementsByClassName</code> retourne un objet de type tableau de l'ensemble des éléments qui ont le nom de classe spécifié.</p>
+
+                <div class="row">
+                  <span class="nine columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultSelectByClassName()">
+                    Résultat
+                  </button>
+                </div>
+
+                <pre><code id="selecteurByClassName">
+                </code></pre>
+
+              </section>
+
+              <!-- QUERIES SELECTOR -->
+              <section id="selectQueries">
+
+                <h5>QuerySelector</h5>
+                <p>La méthode <code>querySelector</code> retourne le premier élément du document qui correspond au sélecteur spécifié.</p>
+
+                <div class="row">
+                  <span class="nine columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultQuerySelector()">
+                    Résultat
+                  </button>
+                </div>
+
+                <pre><code id="selecteurQuerySelector">
+                </code></pre>
+
+                <h5>QuerySelectorAll</h5>
+                <p>La méthode <code>querySelectorAll</code> retourne une <code>NodeList</code> contenant les éléments correspondant aux sélecteurs spécifiés.</p>
+
+                <div class="row">
+                  <span class="nine columns">&nbsp</span>
+                  <button class="three columns" type="button" onclick="resultQuerySelectorAll()">
+                    Résultat
+                  </button>
+                </div>
+
+                <pre><code id="selecteurQuerySelectorAll">
+                </code></pre>
 
               </section>
 
@@ -1156,6 +1197,9 @@
   <script src="/assets/js/dom/selecteurs/selecteurGetElementById.js"></script>
   <script src="/assets/js/dom/selecteurs/selecteurGetElementsByTagName.js"></script>
   <script src="/assets/js/dom/selecteurs/selecteurGetElementsByName.js"></script>
+  <script src="/assets/js/dom/selecteurs/selecteurGetElementsByClassName.js"></script>
+  <script src="/assets/js/dom/selecteurs/selecteurQuerySelector.js"></script>
+  <script src="/assets/js/dom/selecteurs/selecteurQuerySelectorAll.js"></script>
 
 </body>
 
