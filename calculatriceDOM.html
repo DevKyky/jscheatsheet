@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JavaScript Cheat Sheet</title>
+
+    <!-- Skeleton CSS -->
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/skeleton.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/jscs.css" />
+</head>
+
+<body>
+    <header>
+        <h2>JS CheatSheet</h2>
+    </header>
+
+    <div class="container">
+        <main>
+
+            <article>
+
+                <h4>Enonces</h4>
+
+                <section>
+
+                    <h5>Prérequis</h5>
+                    <ul>
+                        <li>Connaitre le <a href="/index.html" target="_blank">DOM</a></li>
+                        <li>Avoir installé les <a href="/outils.html" target="_blank">outils</a></li>
+                    </ul>
+
+                </section>
+
+                <section>
+
+                    <h5>Installation</h5>
+                    <p>Téléchargez le fichier zip <code>calculatriceDOM.zip</code> sur la page des <a href="/outils.html">ressources</a>. Une fois téléchargé, dézippez le fichier.</p>
+                    <p>Ouvrez <b>Visual Studio Code</b> et ouvrez le dossier que vous venez de dézipper <code>File</code> => <code>open folder</code> => <code>sélectionner le dossier</code>.<br>
+                    Ouvrez ensuite le fichier <code>index.html</code> et cliquer sur <code>Go Live</code> en bas à droite (vous devez d'abord avoir installé l'extension Live Server).</p>
+                    <p>Vérifiez si tout fonctionne en inspectant l'élément puis en allant sur la console. Si tout est bien installé, la console doit afficher "OK".</p>
+
+                </section>
+
+                <section>
+
+                    <h5>Calculatrice DOM</h5>
+
+                    <p>Vous devez développer une calculatrice utilisant le DOM. Elle devra avoir un comportement similaire à ceci :</p>
+
+                    <img src="/assets/images/calculatriceDOM.gif" alt="calcDOM.gif">
+
+                    <p>La calculatrice doit pouvoir :</p>
+                    <ul>
+                        <li>Faire une addition, soustraction, multiplication et division</li>
+                        <li>Faire un calcul avec trois opérandes ou plus (de façon dynamique)</li>
+                        <li>Réutiliser le résultat précédent</li>
+                        <li>Effacer le résultat</li>
+                    </ul>
+
+                    <p>La calculatrice de la démo ci-dessus utilise deux fonctions et deux évènements. Le résultat est calculé grâce à la fonction javascript <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/eval">Eval</a>.</p>
+
+                    <p>Vous pouvez vérifier votre code avec cette correction qui est une solution possible :</p>
+
+                    <details>
+                        
+                        <summary>
+                            <span style="color:blueviolet;">Voir la correction</span>
+                        </summary>
+
+                          <pre><code id="calculatriceDOM">
+                          </code></pre>
+
+                    </details>
+
+                </section>
+
+            </article>
+
+
+
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            Developed by <a href="https://github.com/DevKyky">DevKyky</a>. Based on
+            the style of <a href="http://getskeleton.com/">Skeleton</a>
+        </p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="/assets/js/projets/calculatrice/calculatriceDOM.js"></script>
+
+</body>
+
+</html>
